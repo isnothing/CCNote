@@ -1,4 +1,5 @@
 var express = require('express');
+var create = require('../daos/note_dao.js');
 var router = express.Router();
 
 /* GET home page. */
@@ -8,6 +9,7 @@ router.get('/show', function(req, res) {
 
 /* Create a note. */
 router.get('/create', function(req, res) {
+    create('first', 'info');
     res.render('index', {title: 'Create' });
 });
 

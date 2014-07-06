@@ -1,7 +1,7 @@
 var mysql = require('mysql');
-var evnents = require('events');
+var events = require('events');
 var emitter = new events.EventEmitter();
-var app = require('../app/js');
+//var app = require('../app/js');
 var connection = mysql.createConnection({
     host : 'localhost',
     user : 'root',
@@ -10,8 +10,14 @@ var connection = mysql.createConnection({
 });
 
 var create = function(noteName, content) {
-    var createNote = 'insert into ccnote(nid, content) values(' + noteName + ', ' + content + ');';
-    connection.query(createNode, function(err, rows, fields)});
+    var createNote = 'insert into note(name, content) values(?, ?)';
+    connection.query(createNote, ['noteI','content'],function(err, rows, fields){
+        if (err == null) {
+            console.log('error! please try again.');
+        } else {
+            console.log('create successful');
+        }
+    });
 };
 
 module.exports = create;
