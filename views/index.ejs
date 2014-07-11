@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <title>index</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+   <title>ccnote</title>
+   <link rel='stylesheet' href='/stylesheets/style.css' />
+   <script src='/socket.io/socket.io.js'></script>
+   <script src='javascripts/note.js'></script>
+   <script type='text/javascript' src='javascripts/jequery.min.js'></script>
   </head>
   <body>
-      <h1><%= title %></h1>
-      <a href=''></a> 
-    <p>Welcome to <%= title %></p>
+      <div class='note-list'>
+        <h1>note list</h1>
+        <ul id='list-head'>
+        </ul>
+      </div>
   </body>
 </html>

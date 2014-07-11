@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var dao = require('./daos/note_dao');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -59,4 +61,18 @@ app.use(function(err, req, res, next) {
 
 server.listen(3000);
 
-module.exports = app;
+io.sockets.on('connection', function (socket) {
+        console.log('connection');
+        dao.show(socket);
+});
+
+exports.send = function(noteList, socket) {
+    if (socket != null) {
+        socket.emit('result', noteList);
+    } else {
+        io.sockets.on('connection', function (socket) {
+            socket.emit('result', noteList);
+        });
+    }
+    noteList = null;
+}
