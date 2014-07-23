@@ -1,0 +1,20 @@
+<from class="from-horizontal"method="post">
+ <fieldset>
+   <legend>用户登录</legend>
+   <div class="control-group">
+    <label class="control-group" for="username" >用户名</label>
+	<div class="controls">
+	   <input type="text" class="input-xlarge" id="username">
+	 </div>
+	</div>
+	<div class="control-group">
+	  <label class="control-group" for="password">口令</label>
+	  <div class="controls">
+	     <input type="password" class="input-xlarge" id="password" name="password">
+	  </div>
+	</div>
+	<div class="from-actions">
+	  <button type="submit" class="btn btn-primary">登录</button>
+	 </div>
+	</fieldset>
+</form>
