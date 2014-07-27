@@ -1,6 +1,35 @@
 var express = require('express');
 var dao = require('../daos/note_dao.js');
+var userDao = require('../daos/userDao.js');
 var router = express.Router();
+
+/*Note list*/
+router.post('/list', function(req, res) {
+    var name = req.body.user.name;
+    var passwordToCheck =  req.body.user.password;
+    //Check user
+    userDao.getPassword(name, function(password) {
+        if (password == passwordToCheck) {
+            console.log('login successful.');
+        } else {
+            res.redirect('/login');
+            return;
+        }
+    });
+    
+    //Show note list
+    dao.show(function(notelist) {
+    console.log('notelist ' + notelist);    
+    res.render('list', {title: 'noteI'});
+    });
+    
+});
+
+/*Login*/
+router.get('/login', function(req, res) {
+    res.render('login', {
+        title: 'welcome to ccnote'});
+});
 
 /* GET home page. */
 router.get('/show', function(req, res) {

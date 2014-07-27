@@ -8,10 +8,8 @@
    <script type='text/javascript' src='javascripts/jequery.min.js'></script>
   </head>
   <body>
-      <form method="post" action="/list">
-        <h3>username</h3><input type="text" name="user[name]"></input>
-        <h3>passowrd</h3><input type="password" name="user[password]"></input>
-        <input type="submit" value="submit"> 
+      <div class='note-list'>
+      <%include  note_item.ejs%>
       </div>
   </body>
 </html>

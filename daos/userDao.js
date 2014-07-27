@@ -1,4 +1,6 @@
 var mysql = require('mysql');
+var app = require('../app.js');
+//var app = require('../app/js');
 var connection = mysql.createConnection({
     host : 'localhost',
     user : 'root',
@@ -17,13 +19,19 @@ var dao = {
             }
         });
     },
-    show : function(callback) {
-        var showSql = 'select nid, name, content from note';
-        connection.query(showSql, function(err, rows, fields) {
+    getPassword : function(name, callback) {
+        var showSql = 'select password from user where name = ?';
+        connection.query(showSql,[name], function(err, rows, fields) {
             if (err != null) {
-                console.log('error! please try again.');
+                console.log('error!');
             } else {
-                callback(rows);
+                console.log(rows);
+                if (rows.length != 0) {
+                    callback(rows[0].password);
+                } else {
+                    console.log('The user dont exist.');
+                    callback(null);
+                }
             }
         });
     }
