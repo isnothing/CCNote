@@ -19,8 +19,35 @@ router.post('/list', function(req, res) {
     
     //Show note list
     dao.show(function(notelist) {
-    console.log('notelist ' + notelist);    
-    res.render('list', {title: 'noteI'});
+    console.log('notelist ' + notelist);
+
+    var noteArr = [];
+    for (var i=0; i < notelist.length; i++) {
+    	var note = {name: '', content: ''};
+    	note.name = notelist[i].name;
+    	note.content = notelist[i].content;
+    	noteArr.push(note);
+    }
+    
+    res.render('list', { notes: noteArr});
+    });
+    
+});
+
+router.get('/list', function(req, res) {
+    //Show note list
+    dao.show(function(notelist) {
+    console.log('notelist ' + notelist);
+
+    var noteArr = [];
+    for (var i=0; i < notelist.length; i++) {
+    	var note = {name: '', content: ''};
+    	note.name = notelist[i].name;
+    	note.content = notelist[i].content;
+    	noteArr.push(note);
+    }
+    
+    res.render('list', { notes: noteArr});
     });
     
 });

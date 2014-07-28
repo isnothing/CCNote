@@ -8,8 +8,12 @@
    <script type='text/javascript' src='javascripts/jequery.min.js'></script>
   </head>
   <body>
+  		<a href="create"></a>
       <div class='note-list'>
-      <%include  note_item%>
+      <h1>Note List</h1>
+     <% notes.forEach(function(note){ %>
+     <% include note_item %>
+     <% }) %>
       </div>
   </body>
 </html>

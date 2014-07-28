@@ -1,0 +1,4 @@
+<div class="note-item">
+    <div><%=note.name%></div>
+    <div><%=note.content%></div>
+</div>

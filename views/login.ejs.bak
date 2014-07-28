@@ -10,7 +10,7 @@
   </head>
   <body>
   		<div id="main">
-      <form method="post" action="/list">
+      <form method="get" action="/list">
         <div><h3>name:</h3><input type="text" name="user[name]"></input><br></div>
         <div><h3>password:</h3><input type="password" name="user[password]"></input></div><br>
         <input type="submit" value="submit">
