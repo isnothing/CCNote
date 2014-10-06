@@ -6,14 +6,41 @@
    <script src='/socket.io/socket.io.js'></script>
    <script src='javascripts/note.js'></script>
    <script type='text/javascript' src='javascripts/jequery.min.js'></script>
+   <script type='text/javascript'>
+    $(document).ready(function() {
+    console.log("run here.");
+    var swi = 0;
+    $("#noteSwitch").click(function() {
+        if (swi == 0) {
+            $(".note-list").hide();
+            swi = 1;
+        } else {
+            $(".note-list").show();
+            swi = 0;
+        }
+    });
+    });
+    </script>
   </head>
   <body>
-  		<a href="create"></a>
+  <div id="head">
+    <h1>CCNote</h1>
+    <ul>
+        <li class="head-li"><button class="btn btn-embossed btn-primary">New Note</button></li>
+        <li class="head-li"><button id="noteSwitch" class="btn btn-embossed btn-primary">Note List</button></li>
+        <li class="head-li"><button class="btn btn-embossed btn-primary">Settings</button></li>
+    </ul>
+  </div>
+
+  <div id="body">
       <div class='note-list'>
-      <h1>Note List</h1>
+      <h2 class="note-item">Note List</h2>
      <% notes.forEach(function(note){ %>
      <% include note_item %>
+     <hr>
      <% }) %>
       </div>
+      <div id="content"><% include note_content %></div>
+  </div>
   </body>
 </html>

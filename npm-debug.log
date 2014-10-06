@@ -1,0 +1,2187 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'socket.io' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'socket.io', null ]
+6 verbose cache add name=undefined spec="socket.io" args=["socket.io",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'socket.io',
+7 verbose parsed url   path: 'socket.io',
+7 verbose parsed url   href: 'socket.io' }
+8 silly lockFile 71475bfd-socket-io socket.io
+9 verbose lock socket.io /home/taojx/.npm/71475bfd-socket-io.lock
+10 silly lockFile 71475bfd-socket-io socket.io
+11 silly lockFile 71475bfd-socket-io socket.io
+12 verbose addNamed [ 'socket.io', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile c03de861-socket-io socket.io@
+15 verbose lock socket.io@ /home/taojx/.npm/c03de861-socket-io.lock
+16 silly addNameRange { name: 'socket.io', range: '*', hasData: false }
+17 verbose request where is /socket.io
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id ed0b0bd97342b899
+20 verbose url raw /socket.io
+21 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+22 verbose url resolved https://registry.npmjs.org/socket.io
+23 verbose request where is https://registry.npmjs.org/socket.io
+24 info trying registry request attempt 1 at 16:15:26
+25 http GET https://registry.npmjs.org/socket.io
+26 http 200 https://registry.npmjs.org/socket.io
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:27 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"EZMS0TKE7DSQI8GTHRH40G4YK"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '98711',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '210',
+27 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '5',
+27 silly registry.get     'x-timer': 'S1412583327.460737,VS0,VE0',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'socket.io', range: '*', hasData: true }
+29 silly addNameRange versions [ 'socket.io',
+29 silly addNameRange   [ '0.3.8',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.5.1',
+29 silly addNameRange     '0.5.3',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.6.1',
+29 silly addNameRange     '0.6.3',
+29 silly addNameRange     '0.6.4',
+29 silly addNameRange     '0.6.5',
+29 silly addNameRange     '0.6.6',
+29 silly addNameRange     '0.6.7',
+29 silly addNameRange     '0.6.8',
+29 silly addNameRange     '0.6.9',
+29 silly addNameRange     '0.6.10',
+29 silly addNameRange     '0.6.11',
+29 silly addNameRange     '0.6.12',
+29 silly addNameRange     '0.6.14',
+29 silly addNameRange     '0.6.15',
+29 silly addNameRange     '0.6.16',
+29 silly addNameRange     '0.6.17',
+29 silly addNameRange     '0.6.18',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.7.2',
+29 silly addNameRange     '0.7.3',
+29 silly addNameRange     '0.7.4',
+29 silly addNameRange     '0.7.5',
+29 silly addNameRange     '0.7.6',
+29 silly addNameRange     '0.7.7',
+29 silly addNameRange     '0.7.8',
+29 silly addNameRange     '0.7.9',
+29 silly addNameRange     '0.7.10',
+29 silly addNameRange     '0.7.11',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.8.1',
+29 silly addNameRange     '0.8.2',
+29 silly addNameRange     '0.8.3',
+29 silly addNameRange     '0.8.4',
+29 silly addNameRange     '0.8.5',
+29 silly addNameRange     '0.8.6',
+29 silly addNameRange     '0.8.7',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.1',
+29 silly addNameRange     '0.9.1-1',
+29 silly addNameRange     '0.9.2',
+29 silly addNameRange     '0.9.3',
+29 silly addNameRange     '0.9.4',
+29 silly addNameRange     '0.9.5',
+29 silly addNameRange     '0.9.6',
+29 silly addNameRange     '0.9.7',
+29 silly addNameRange     '0.9.8',
+29 silly addNameRange     '0.9.9',
+29 silly addNameRange     '0.9.10',
+29 silly addNameRange     '0.9.11',
+29 silly addNameRange     '0.9.12',
+29 silly addNameRange     '0.9.13',
+29 silly addNameRange     '0.9.14',
+29 silly addNameRange     '0.9.15',
+29 silly addNameRange     '0.9.16',
+29 silly addNameRange     '1.0.0-pre',
+29 silly addNameRange     '1.0.0-pre2',
+29 silly addNameRange     '1.0.0-pre3',
+29 silly addNameRange     '1.0.0-pre4',
+29 silly addNameRange     '1.0.0-pre5',
+29 silly addNameRange     '0.9.17',
+29 silly addNameRange     '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.0.2',
+29 silly addNameRange     '1.0.3',
+29 silly addNameRange     '1.0.4',
+29 silly addNameRange     '1.0.5',
+29 silly addNameRange     '1.0.6',
+29 silly addNameRange     '1.1.0' ] ]
+30 verbose addNamed [ 'socket.io', '1.1.0' ]
+31 verbose addNamed [ '1.1.0', '1.1.0' ]
+32 silly lockFile 8bfafe15-socket-io-1-1-0 socket.io@1.1.0
+33 verbose lock socket.io@1.1.0 /home/taojx/.npm/8bfafe15-socket-io-1-1-0.lock
+34 silly lockFile 9bb74f5a-rg-socket-io-socket-io-1-1-0-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz
+35 verbose lock https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz /home/taojx/.npm/9bb74f5a-rg-socket-io-socket-io-1-1-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz',
+36 verbose addRemoteTarball   '0825ecb5740f34c2319a40087c537a348010dbb6' ]
+37 info retry fetch attempt 1 at 16:15:28
+38 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz
+39 http GET https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz
+40 http 200 https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz
+41 silly lockFile 9bb74f5a-rg-socket-io-socket-io-1-1-0-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz
+42 silly lockFile 9bb74f5a-rg-socket-io-socket-io-1-1-0-tgz https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz
+43 silly lockFile 8bfafe15-socket-io-1-1-0 socket.io@1.1.0
+44 silly lockFile 8bfafe15-socket-io-1-1-0 socket.io@1.1.0
+45 silly lockFile c03de861-socket-io socket.io@
+46 silly lockFile c03de861-socket-io socket.io@
+47 silly resolved [ { name: 'socket.io',
+47 silly resolved     version: '1.1.0',
+47 silly resolved     description: 'node.js realtime framework server',
+47 silly resolved     keywords:
+47 silly resolved      [ 'realtime',
+47 silly resolved        'framework',
+47 silly resolved        'websocket',
+47 silly resolved        'tcp',
+47 silly resolved        'events',
+47 silly resolved        'socket',
+47 silly resolved        'io' ],
+47 silly resolved     repository: { type: 'git', url: 'git://github.com/Automattic/socket.io' },
+47 silly resolved     scripts: { test: 'make test' },
+47 silly resolved     dependencies:
+47 silly resolved      { 'engine.io': '1.4.0',
+47 silly resolved        'socket.io-parser': '2.2.1',
+47 silly resolved        'socket.io-client': '1.1.0',
+47 silly resolved        'socket.io-adapter': '0.2.0',
+47 silly resolved        'has-binary-data': '0.1.3',
+47 silly resolved        debug: '0.7.4' },
+47 silly resolved     devDependencies:
+47 silly resolved      { mocha: '1.16.2',
+47 silly resolved        'expect.js': '0.3.1',
+47 silly resolved        supertest: '0.8.2',
+47 silly resolved        superagent: '0.17.0',
+47 silly resolved        istanbul: '0.2.3' },
+47 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+47 silly resolved     gitHead: '16483375a78e3dab95e95f1b3ed088b31e042275',
+47 silly resolved     bugs: { url: 'https://github.com/Automattic/socket.io/issues' },
+47 silly resolved     homepage: 'https://github.com/Automattic/socket.io',
+47 silly resolved     _id: 'socket.io@1.1.0',
+47 silly resolved     _shasum: '0825ecb5740f34c2319a40087c537a348010dbb6',
+47 silly resolved     _from: 'socket.io@',
+47 silly resolved     _npmVersion: '1.4.25',
+47 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: '0825ecb5740f34c2319a40087c537a348010dbb6',
+47 silly resolved        tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/socket.io/-/socket.io-1.1.0.tgz' } ]
+48 info install socket.io@1.1.0 into /home/taojx/workspace/CCNote
+49 info installOne socket.io@1.1.0
+50 verbose node_modules/socket.io unbuild
+51 info preuninstall socket.io@1.0.6
+52 info uninstall socket.io@1.0.6
+53 verbose true,/home/taojx/workspace/CCNote/node_modules,/home/taojx/workspace/CCNote/node_modules unbuild socket.io@1.0.6
+54 info postuninstall socket.io@1.0.6
+55 verbose tar unpack /home/taojx/.npm/socket.io/1.1.0/package.tgz
+56 silly lockFile de0eb89f-ce-CCNote-node-modules-socket-io tar:///home/taojx/workspace/CCNote/node_modules/socket.io
+57 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io /home/taojx/.npm/de0eb89f-ce-CCNote-node-modules-socket-io.lock
+58 silly lockFile d3347191--npm-socket-io-1-1-0-package-tgz tar:///home/taojx/.npm/socket.io/1.1.0/package.tgz
+59 verbose lock tar:///home/taojx/.npm/socket.io/1.1.0/package.tgz /home/taojx/.npm/d3347191--npm-socket-io-1-1-0-package-tgz.lock
+60 silly gunzTarPerm modes [ '775', '664' ]
+61 silly gunzTarPerm extractEntry package.json
+62 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+63 silly gunzTarPerm extractEntry .npmignore
+64 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+65 silly gunzTarPerm extractEntry LICENSE
+66 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+67 silly gunzTarPerm extractEntry index.js
+68 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+69 silly gunzTarPerm extractEntry Readme.md
+70 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+71 silly gunzTarPerm extractEntry Makefile
+72 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+73 silly gunzTarPerm extractEntry .travis.yml
+74 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+75 silly gunzTarPerm extractEntry History.md
+76 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+77 silly gunzTarPerm extractEntry lib/client.js
+78 silly gunzTarPerm modified mode [ 'lib/client.js', 420, 436 ]
+79 silly gunzTarPerm extractEntry lib/index.js
+80 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+81 silly gunzTarPerm extractEntry lib/namespace.js
+82 silly gunzTarPerm modified mode [ 'lib/namespace.js', 420, 436 ]
+83 silly gunzTarPerm extractEntry lib/socket.js
+84 silly gunzTarPerm modified mode [ 'lib/socket.js', 420, 436 ]
+85 silly lockFile de0eb89f-ce-CCNote-node-modules-socket-io tar:///home/taojx/workspace/CCNote/node_modules/socket.io
+86 silly lockFile de0eb89f-ce-CCNote-node-modules-socket-io tar:///home/taojx/workspace/CCNote/node_modules/socket.io
+87 silly lockFile d3347191--npm-socket-io-1-1-0-package-tgz tar:///home/taojx/.npm/socket.io/1.1.0/package.tgz
+88 silly lockFile d3347191--npm-socket-io-1-1-0-package-tgz tar:///home/taojx/.npm/socket.io/1.1.0/package.tgz
+89 info preinstall socket.io@1.1.0
+90 verbose readDependencies using package.json deps
+91 verbose readDependencies using package.json deps
+92 verbose cache add [ 'engine.io@1.4.0', null ]
+93 verbose cache add name=undefined spec="engine.io@1.4.0" args=["engine.io@1.4.0",null]
+94 verbose parsed url { protocol: null,
+94 verbose parsed url   slashes: null,
+94 verbose parsed url   auth: null,
+94 verbose parsed url   host: null,
+94 verbose parsed url   port: null,
+94 verbose parsed url   hostname: null,
+94 verbose parsed url   hash: null,
+94 verbose parsed url   search: null,
+94 verbose parsed url   query: null,
+94 verbose parsed url   pathname: 'engine.io@1.4.0',
+94 verbose parsed url   path: 'engine.io@1.4.0',
+94 verbose parsed url   href: 'engine.io@1.4.0' }
+95 verbose cache add [ 'socket.io-parser@2.2.1', null ]
+96 verbose cache add name=undefined spec="socket.io-parser@2.2.1" args=["socket.io-parser@2.2.1",null]
+97 verbose parsed url { protocol: null,
+97 verbose parsed url   slashes: null,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: null,
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: null,
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: 'socket.io-parser@2.2.1',
+97 verbose parsed url   path: 'socket.io-parser@2.2.1',
+97 verbose parsed url   href: 'socket.io-parser@2.2.1' }
+98 verbose cache add [ 'socket.io-client@1.1.0', null ]
+99 verbose cache add name=undefined spec="socket.io-client@1.1.0" args=["socket.io-client@1.1.0",null]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: 'socket.io-client@1.1.0',
+100 verbose parsed url   path: 'socket.io-client@1.1.0',
+100 verbose parsed url   href: 'socket.io-client@1.1.0' }
+101 verbose cache add name="engine.io" spec="1.4.0" args=["engine.io","1.4.0"]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: '1.4.0',
+102 verbose parsed url   path: '1.4.0',
+102 verbose parsed url   href: '1.4.0' }
+103 verbose addNamed [ 'engine.io', '1.4.0' ]
+104 verbose addNamed [ '1.4.0', '1.4.0' ]
+105 silly lockFile e1fe5251-engine-io-1-4-0 engine.io@1.4.0
+106 verbose lock engine.io@1.4.0 /home/taojx/.npm/e1fe5251-engine-io-1-4-0.lock
+107 verbose cache add name="socket.io-parser" spec="2.2.1" args=["socket.io-parser","2.2.1"]
+108 verbose parsed url { protocol: null,
+108 verbose parsed url   slashes: null,
+108 verbose parsed url   auth: null,
+108 verbose parsed url   host: null,
+108 verbose parsed url   port: null,
+108 verbose parsed url   hostname: null,
+108 verbose parsed url   hash: null,
+108 verbose parsed url   search: null,
+108 verbose parsed url   query: null,
+108 verbose parsed url   pathname: '2.2.1',
+108 verbose parsed url   path: '2.2.1',
+108 verbose parsed url   href: '2.2.1' }
+109 verbose addNamed [ 'socket.io-parser', '2.2.1' ]
+110 verbose addNamed [ '2.2.1', '2.2.1' ]
+111 silly lockFile e0f835e4-socket-io-parser-2-2-1 socket.io-parser@2.2.1
+112 verbose lock socket.io-parser@2.2.1 /home/taojx/.npm/e0f835e4-socket-io-parser-2-2-1.lock
+113 verbose cache add [ 'socket.io-adapter@0.2.0', null ]
+114 verbose cache add name=undefined spec="socket.io-adapter@0.2.0" args=["socket.io-adapter@0.2.0",null]
+115 verbose parsed url { protocol: null,
+115 verbose parsed url   slashes: null,
+115 verbose parsed url   auth: null,
+115 verbose parsed url   host: null,
+115 verbose parsed url   port: null,
+115 verbose parsed url   hostname: null,
+115 verbose parsed url   hash: null,
+115 verbose parsed url   search: null,
+115 verbose parsed url   query: null,
+115 verbose parsed url   pathname: 'socket.io-adapter@0.2.0',
+115 verbose parsed url   path: 'socket.io-adapter@0.2.0',
+115 verbose parsed url   href: 'socket.io-adapter@0.2.0' }
+116 verbose cache add [ 'has-binary-data@0.1.3', null ]
+117 verbose cache add name=undefined spec="has-binary-data@0.1.3" args=["has-binary-data@0.1.3",null]
+118 verbose parsed url { protocol: null,
+118 verbose parsed url   slashes: null,
+118 verbose parsed url   auth: null,
+118 verbose parsed url   host: null,
+118 verbose parsed url   port: null,
+118 verbose parsed url   hostname: null,
+118 verbose parsed url   hash: null,
+118 verbose parsed url   search: null,
+118 verbose parsed url   query: null,
+118 verbose parsed url   pathname: 'has-binary-data@0.1.3',
+118 verbose parsed url   path: 'has-binary-data@0.1.3',
+118 verbose parsed url   href: 'has-binary-data@0.1.3' }
+119 verbose cache add name="socket.io-client" spec="1.1.0" args=["socket.io-client","1.1.0"]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: '1.1.0',
+120 verbose parsed url   path: '1.1.0',
+120 verbose parsed url   href: '1.1.0' }
+121 verbose addNamed [ 'socket.io-client', '1.1.0' ]
+122 verbose addNamed [ '1.1.0', '1.1.0' ]
+123 silly lockFile f55705ef-socket-io-client-1-1-0 socket.io-client@1.1.0
+124 verbose lock socket.io-client@1.1.0 /home/taojx/.npm/f55705ef-socket-io-client-1-1-0.lock
+125 verbose cache add name="socket.io-adapter" spec="0.2.0" args=["socket.io-adapter","0.2.0"]
+126 verbose parsed url { protocol: null,
+126 verbose parsed url   slashes: null,
+126 verbose parsed url   auth: null,
+126 verbose parsed url   host: null,
+126 verbose parsed url   port: null,
+126 verbose parsed url   hostname: null,
+126 verbose parsed url   hash: null,
+126 verbose parsed url   search: null,
+126 verbose parsed url   query: null,
+126 verbose parsed url   pathname: '0.2.0',
+126 verbose parsed url   path: '0.2.0',
+126 verbose parsed url   href: '0.2.0' }
+127 verbose addNamed [ 'socket.io-adapter', '0.2.0' ]
+128 verbose addNamed [ '0.2.0', '0.2.0' ]
+129 silly lockFile 00adeea2-socket-io-adapter-0-2-0 socket.io-adapter@0.2.0
+130 verbose lock socket.io-adapter@0.2.0 /home/taojx/.npm/00adeea2-socket-io-adapter-0-2-0.lock
+131 verbose cache add name="has-binary-data" spec="0.1.3" args=["has-binary-data","0.1.3"]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: '0.1.3',
+132 verbose parsed url   path: '0.1.3',
+132 verbose parsed url   href: '0.1.3' }
+133 verbose addNamed [ 'has-binary-data', '0.1.3' ]
+134 verbose addNamed [ '0.1.3', '0.1.3' ]
+135 silly lockFile f0f0db2a-has-binary-data-0-1-3 has-binary-data@0.1.3
+136 verbose lock has-binary-data@0.1.3 /home/taojx/.npm/f0f0db2a-has-binary-data-0-1-3.lock
+137 verbose request where is /engine.io
+138 verbose request registry https://registry.npmjs.org/
+139 verbose url raw /engine.io
+140 verbose url resolving [ 'https://registry.npmjs.org/', './engine.io' ]
+141 verbose url resolved https://registry.npmjs.org/engine.io
+142 verbose request where is https://registry.npmjs.org/engine.io
+143 info trying registry request attempt 1 at 16:15:29
+144 http GET https://registry.npmjs.org/engine.io
+145 verbose request where is /socket.io-parser
+146 verbose request registry https://registry.npmjs.org/
+147 verbose url raw /socket.io-parser
+148 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-parser' ]
+149 verbose url resolved https://registry.npmjs.org/socket.io-parser
+150 verbose request where is https://registry.npmjs.org/socket.io-parser
+151 info trying registry request attempt 1 at 16:15:29
+152 http GET https://registry.npmjs.org/socket.io-parser
+153 verbose request where is /socket.io-client
+154 verbose request registry https://registry.npmjs.org/
+155 verbose url raw /socket.io-client
+156 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client' ]
+157 verbose url resolved https://registry.npmjs.org/socket.io-client
+158 verbose request where is https://registry.npmjs.org/socket.io-client
+159 info trying registry request attempt 1 at 16:15:29
+160 http GET https://registry.npmjs.org/socket.io-client
+161 verbose request where is /socket.io-adapter
+162 verbose request registry https://registry.npmjs.org/
+163 verbose url raw /socket.io-adapter
+164 verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-adapter' ]
+165 verbose url resolved https://registry.npmjs.org/socket.io-adapter
+166 verbose request where is https://registry.npmjs.org/socket.io-adapter
+167 info trying registry request attempt 1 at 16:15:29
+168 http GET https://registry.npmjs.org/socket.io-adapter
+169 verbose request where is /has-binary-data
+170 verbose request registry https://registry.npmjs.org/
+171 verbose url raw /has-binary-data
+172 verbose url resolving [ 'https://registry.npmjs.org/', './has-binary-data' ]
+173 verbose url resolved https://registry.npmjs.org/has-binary-data
+174 verbose request where is https://registry.npmjs.org/has-binary-data
+175 info trying registry request attempt 1 at 16:15:29
+176 http GET https://registry.npmjs.org/has-binary-data
+177 http 200 https://registry.npmjs.org/has-binary-data
+178 silly registry.get cb [ 200,
+178 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:30 GMT',
+178 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+178 silly registry.get     etag: '"1XVJTXXLOFPL9H6H8GT1XR24W"',
+178 silly registry.get     'content-type': 'application/json',
+178 silly registry.get     'cache-control': 'max-age=60',
+178 silly registry.get     'content-length': '4125',
+178 silly registry.get     'accept-ranges': 'bytes',
+178 silly registry.get     via: '1.1 varnish',
+178 silly registry.get     age: '193',
+178 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+178 silly registry.get     'x-cache': 'HIT',
+178 silly registry.get     'x-cache-hits': '1',
+178 silly registry.get     'x-timer': 'S1412583330.470475,VS0,VE181',
+178 silly registry.get     vary: 'Accept',
+178 silly registry.get     'keep-alive': 'timeout=10, max=50',
+178 silly registry.get     connection: 'Keep-Alive' } ]
+179 silly lockFile fc457f6f-y-data-has-binary-data-0-1-3-tgz https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+180 verbose lock https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz /home/taojx/.npm/fc457f6f-y-data-has-binary-data-0-1-3-tgz.lock
+181 verbose addRemoteTarball [ 'https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz',
+181 verbose addRemoteTarball   '8ebb18388b57f19a5231275a16fc18d51f379aae' ]
+182 info retry fetch attempt 1 at 16:15:30
+183 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+184 http GET https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+185 http 200 https://registry.npmjs.org/socket.io-adapter
+186 silly registry.get cb [ 200,
+186 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:30 GMT',
+186 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+186 silly registry.get     etag: '"DB3WRKB5PIGGGA2N7MHAM7T72"',
+186 silly registry.get     'content-type': 'application/json',
+186 silly registry.get     'cache-control': 'max-age=60',
+186 silly registry.get     'content-length': '2590',
+186 silly registry.get     'accept-ranges': 'bytes',
+186 silly registry.get     via: '1.1 varnish',
+186 silly registry.get     age: '193',
+186 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+186 silly registry.get     'x-cache': 'HIT',
+186 silly registry.get     'x-cache-hits': '1',
+186 silly registry.get     'x-timer': 'S1412583330.465204,VS0,VE518',
+186 silly registry.get     vary: 'Accept',
+186 silly registry.get     'keep-alive': 'timeout=10, max=50',
+186 silly registry.get     connection: 'Keep-Alive' } ]
+187 silly lockFile 7ce016af-pter-socket-io-adapter-0-2-0-tgz https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz
+188 verbose lock https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz /home/taojx/.npm/7ce016af-pter-socket-io-adapter-0-2-0-tgz.lock
+189 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz',
+189 verbose addRemoteTarball   'bd39329b8961371787e24f345b074ec9cf000e33' ]
+190 info retry fetch attempt 1 at 16:15:31
+191 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz
+192 http GET https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz
+193 http 200 https://registry.npmjs.org/engine.io
+194 silly registry.get cb [ 200,
+194 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:30 GMT',
+194 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+194 silly registry.get     etag: '"EMDCR9EIFJA01MQK7P3P3ZBHK"',
+194 silly registry.get     'content-type': 'application/json',
+194 silly registry.get     'cache-control': 'max-age=60',
+194 silly registry.get     'content-length': '91461',
+194 silly registry.get     'accept-ranges': 'bytes',
+194 silly registry.get     via: '1.1 varnish',
+194 silly registry.get     age: '393',
+194 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+194 silly registry.get     'x-cache': 'HIT',
+194 silly registry.get     'x-cache-hits': '1',
+194 silly registry.get     'x-timer': 'S1412583330.331361,VS0,VE470',
+194 silly registry.get     vary: 'Accept',
+194 silly registry.get     'keep-alive': 'timeout=10, max=50',
+194 silly registry.get     connection: 'Keep-Alive' } ]
+195 http 200 https://registry.npmjs.org/socket.io-parser
+196 silly registry.get cb [ 200,
+196 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:31 GMT',
+196 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+196 silly registry.get     etag: '"CT4DRXJN0F94X6ZY48HDIK13W"',
+196 silly registry.get     'content-type': 'application/json',
+196 silly registry.get     'cache-control': 'max-age=60',
+196 silly registry.get     'content-length': '16665',
+196 silly registry.get     'accept-ranges': 'bytes',
+196 silly registry.get     via: '1.1 varnish',
+196 silly registry.get     age: '933',
+196 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+196 silly registry.get     'x-cache': 'HIT',
+196 silly registry.get     'x-cache-hits': '1',
+196 silly registry.get     'x-timer': 'S1412583330.459536,VS0,VE752',
+196 silly registry.get     vary: 'Accept',
+196 silly registry.get     'keep-alive': 'timeout=10, max=50',
+196 silly registry.get     connection: 'Keep-Alive' } ]
+197 silly lockFile cceffd53-rg-engine-io-engine-io-1-4-0-tgz https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz
+198 verbose lock https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz /home/taojx/.npm/cceffd53-rg-engine-io-engine-io-1-4-0-tgz.lock
+199 verbose addRemoteTarball [ 'https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz',
+199 verbose addRemoteTarball   '972c4f690f7efdc38b2a286760bb5f3e216ff168' ]
+200 silly lockFile 303875b7-arser-socket-io-parser-2-2-1-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz
+201 verbose lock https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz /home/taojx/.npm/303875b7-arser-socket-io-parser-2-2-1-tgz.lock
+202 info retry fetch attempt 1 at 16:15:31
+203 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz
+204 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz',
+204 verbose addRemoteTarball   '22e79d7a8458f4b48cc20884c00285487b1b77d8' ]
+205 http GET https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz
+206 info retry fetch attempt 1 at 16:15:31
+207 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz
+208 http GET https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz
+209 http 200 https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz
+210 http 200 https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz
+211 silly lockFile 303875b7-arser-socket-io-parser-2-2-1-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz
+212 silly lockFile 303875b7-arser-socket-io-parser-2-2-1-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz
+213 silly lockFile e0f835e4-socket-io-parser-2-2-1 socket.io-parser@2.2.1
+214 silly lockFile e0f835e4-socket-io-parser-2-2-1 socket.io-parser@2.2.1
+215 silly lockFile cceffd53-rg-engine-io-engine-io-1-4-0-tgz https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz
+216 silly lockFile cceffd53-rg-engine-io-engine-io-1-4-0-tgz https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz
+217 silly lockFile e1fe5251-engine-io-1-4-0 engine.io@1.4.0
+218 silly lockFile e1fe5251-engine-io-1-4-0 engine.io@1.4.0
+219 http 200 https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+220 silly lockFile fc457f6f-y-data-has-binary-data-0-1-3-tgz https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+221 silly lockFile fc457f6f-y-data-has-binary-data-0-1-3-tgz https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz
+222 silly lockFile f0f0db2a-has-binary-data-0-1-3 has-binary-data@0.1.3
+223 silly lockFile f0f0db2a-has-binary-data-0-1-3 has-binary-data@0.1.3
+224 http 200 https://registry.npmjs.org/socket.io-client
+225 silly registry.get cb [ 200,
+225 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:35 GMT',
+225 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+225 silly registry.get     etag: '"1OI3I5EE4OFIS3NFZ8UNTE113"',
+225 silly registry.get     'content-type': 'application/json',
+225 silly registry.get     'cache-control': 'max-age=60',
+225 silly registry.get     'content-length': '73425',
+225 silly registry.get     'accept-ranges': 'bytes',
+225 silly registry.get     via: '1.1 varnish',
+225 silly registry.get     age: '78',
+225 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+225 silly registry.get     'x-cache': 'HIT',
+225 silly registry.get     'x-cache-hits': '3',
+225 silly registry.get     'x-timer': 'S1412583335.605037,VS0,VE0',
+225 silly registry.get     vary: 'Accept',
+225 silly registry.get     'keep-alive': 'timeout=10, max=50',
+225 silly registry.get     connection: 'Keep-Alive' } ]
+226 silly lockFile ebe063c6-lient-socket-io-client-1-1-0-tgz https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz
+227 verbose lock https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz /home/taojx/.npm/ebe063c6-lient-socket-io-client-1-1-0-tgz.lock
+228 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz',
+228 verbose addRemoteTarball   '66b8b99c709ede111c724b7cc45b16dbeadd4abc' ]
+229 info retry fetch attempt 1 at 16:15:36
+230 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz
+231 http GET https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz
+232 http 200 https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz
+233 http 200 https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz
+234 silly lockFile 7ce016af-pter-socket-io-adapter-0-2-0-tgz https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz
+235 silly lockFile 7ce016af-pter-socket-io-adapter-0-2-0-tgz https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz
+236 silly lockFile 00adeea2-socket-io-adapter-0-2-0 socket.io-adapter@0.2.0
+237 silly lockFile 00adeea2-socket-io-adapter-0-2-0 socket.io-adapter@0.2.0
+238 silly lockFile ebe063c6-lient-socket-io-client-1-1-0-tgz https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz
+239 silly lockFile ebe063c6-lient-socket-io-client-1-1-0-tgz https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz
+240 silly lockFile f55705ef-socket-io-client-1-1-0 socket.io-client@1.1.0
+241 silly lockFile f55705ef-socket-io-client-1-1-0 socket.io-client@1.1.0
+242 silly resolved [ { name: 'socket.io-parser',
+242 silly resolved     version: '2.2.1',
+242 silly resolved     description: 'socket.io protocol parser',
+242 silly resolved     repository:
+242 silly resolved      { type: 'git',
+242 silly resolved        url: 'https://github.com/Automattic/socket.io-parser.git' },
+242 silly resolved     dependencies:
+242 silly resolved      { debug: '0.7.4',
+242 silly resolved        json3: '3.2.6',
+242 silly resolved        'component-emitter': '1.1.2',
+242 silly resolved        isarray: '0.0.1',
+242 silly resolved        benchmark: '1.0.0' },
+242 silly resolved     devDependencies: { mocha: '1.16.2', 'expect.js': '0.2.0', zuul: '1.6.3' },
+242 silly resolved     scripts: { test: 'make test' },
+242 silly resolved     license: 'MIT',
+242 silly resolved     gitHead: '5c551f0f527fec41361df6fdc0d60d202e658045',
+242 silly resolved     bugs: { url: 'https://github.com/Automattic/socket.io-parser/issues' },
+242 silly resolved     homepage: 'https://github.com/Automattic/socket.io-parser',
+242 silly resolved     _id: 'socket.io-parser@2.2.1',
+242 silly resolved     _shasum: '22e79d7a8458f4b48cc20884c00285487b1b77d8',
+242 silly resolved     _from: 'socket.io-parser@2.2.1',
+242 silly resolved     _npmVersion: '1.4.14',
+242 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     dist:
+242 silly resolved      { shasum: '22e79d7a8458f4b48cc20884c00285487b1b77d8',
+242 silly resolved        tarball: 'http://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz' },
+242 silly resolved     directories: {},
+242 silly resolved     _resolved: 'https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.1.tgz' },
+242 silly resolved   { name: 'engine.io',
+242 silly resolved     version: '1.4.0',
+242 silly resolved     description: 'The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server',
+242 silly resolved     main: './lib/engine.io',
+242 silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+242 silly resolved     homepage: 'https://github.com/LearnBoost/engine.io',
+242 silly resolved     repository: { type: 'git', url: 'git@github.com:LearnBoost/engine.io.git' },
+242 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+242 silly resolved     dependencies:
+242 silly resolved      { debug: '1.0.3',
+242 silly resolved        ws: '0.4.31',
+242 silly resolved        'engine.io-parser': '1.1.0',
+242 silly resolved        base64id: '0.1.0' },
+242 silly resolved     devDependencies:
+242 silly resolved      { mocha: '1.12.0',
+242 silly resolved        'expect.js': '0.2.0',
+242 silly resolved        superagent: '0.15.4',
+242 silly resolved        'engine.io-client': '1.4.0',
+242 silly resolved        s: '0.1.1' },
+242 silly resolved     scripts: { test: 'make test' },
+242 silly resolved     gitHead: 'f31a24e8dbd39f963a67bfa073c1a00d99a15e6b',
+242 silly resolved     bugs: { url: 'https://github.com/LearnBoost/engine.io/issues' },
+242 silly resolved     _id: 'engine.io@1.4.0',
+242 silly resolved     _shasum: '972c4f690f7efdc38b2a286760bb5f3e216ff168',
+242 silly resolved     _from: 'engine.io@1.4.0',
+242 silly resolved     _npmVersion: '1.4.25',
+242 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     dist:
+242 silly resolved      { shasum: '972c4f690f7efdc38b2a286760bb5f3e216ff168',
+242 silly resolved        tarball: 'http://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz' },
+242 silly resolved     directories: {},
+242 silly resolved     _resolved: 'https://registry.npmjs.org/engine.io/-/engine.io-1.4.0.tgz' },
+242 silly resolved   { name: 'has-binary-data',
+242 silly resolved     version: '0.1.3',
+242 silly resolved     description: 'A function that takes anything in javascript and returns true if its argument contains binary data.',
+242 silly resolved     dependencies: { isarray: '0.0.1' },
+242 silly resolved     devDependencies: { 'better-assert': '1.0.0', mocha: '1.17.1' },
+242 silly resolved     author: { name: 'Kevin Roark' },
+242 silly resolved     license: 'ISC',
+242 silly resolved     _id: 'has-binary-data@0.1.3',
+242 silly resolved     dist:
+242 silly resolved      { shasum: '8ebb18388b57f19a5231275a16fc18d51f379aae',
+242 silly resolved        tarball: 'http://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz' },
+242 silly resolved     _from: 'has-binary-data@0.1.3',
+242 silly resolved     _npmVersion: '1.3.24',
+242 silly resolved     _npmUser: { name: 'porkfat', email: 'ker2143@columbia.edu' },
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     directories: {},
+242 silly resolved     _shasum: '8ebb18388b57f19a5231275a16fc18d51f379aae',
+242 silly resolved     _resolved: 'https://registry.npmjs.org/has-binary-data/-/has-binary-data-0.1.3.tgz' },
+242 silly resolved   { name: 'socket.io-adapter',
+242 silly resolved     version: '0.2.0',
+242 silly resolved     description: 'Default socket.io in-memory adapter class.',
+242 silly resolved     dependencies: { debug: '0.7.4', 'socket.io-parser': '2.1.2' },
+242 silly resolved     _id: 'socket.io-adapter@0.2.0',
+242 silly resolved     dist:
+242 silly resolved      { shasum: 'bd39329b8961371787e24f345b074ec9cf000e33',
+242 silly resolved        tarball: 'http://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz' },
+242 silly resolved     _from: 'socket.io-adapter@0.2.0',
+242 silly resolved     _npmVersion: '1.4.3',
+242 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     directories: {},
+242 silly resolved     _shasum: 'bd39329b8961371787e24f345b074ec9cf000e33',
+242 silly resolved     _resolved: 'https://registry.npmjs.org/socket.io-adapter/-/socket.io-adapter-0.2.0.tgz' },
+242 silly resolved   { name: 'socket.io-client',
+242 silly resolved     version: '1.1.0',
+242 silly resolved     keywords: [ 'realtime', 'framework', 'websocket', 'tcp', 'events', 'client' ],
+242 silly resolved     dependencies:
+242 silly resolved      { debug: '0.7.4',
+242 silly resolved        'engine.io-client': '1.4.0',
+242 silly resolved        'component-bind': '1.0.0',
+242 silly resolved        'component-emitter': '1.1.2',
+242 silly resolved        'object-component': '0.0.3',
+242 silly resolved        'socket.io-parser': '2.2.2',
+242 silly resolved        'has-binary': '0.1.5',
+242 silly resolved        indexof: '0.0.1',
+242 silly resolved        parseuri: '0.0.2',
+242 silly resolved        'to-array': '0.1.3' },
+242 silly resolved     devDependencies:
+242 silly resolved      { 'socket.io': '1.1.0',
+242 silly resolved        mocha: '1.16.2',
+242 silly resolved        zuul: '1.10.2',
+242 silly resolved        istanbul: '0.2.1',
+242 silly resolved        'expect.js': '0.2.0',
+242 silly resolved        'uglify-js': '2.4.8',
+242 silly resolved        browserify: '4.2.1',
+242 silly resolved        'base64-arraybuffer': '0.1.0',
+242 silly resolved        'text-blob-builder': '0.0.1',
+242 silly resolved        'has-cors': '1.0.3' },
+242 silly resolved     scripts: { test: 'make test' },
+242 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+242 silly resolved     repository:
+242 silly resolved      { type: 'git',
+242 silly resolved        url: 'https://github.com/LearnBoost/socket.io-client.git' },
+242 silly resolved     license: 'MIT',
+242 silly resolved     gitHead: '09c8781c8ffd1dc61904f9d37572cb47327ba797',
+242 silly resolved     description: '[![Build Status](https://secure.travis-ci.org/Automattic/socket.io-client.svg)](http://travis-ci.org/Automattic/socket.io-client) [![NPM version](https://badge.fury.io/js/socket.io-client.svg)](http://badge.fury.io/js/socket.io-client)',
+242 silly resolved     bugs: { url: 'https://github.com/LearnBoost/socket.io-client/issues' },
+242 silly resolved     homepage: 'https://github.com/LearnBoost/socket.io-client',
+242 silly resolved     _id: 'socket.io-client@1.1.0',
+242 silly resolved     _shasum: '66b8b99c709ede111c724b7cc45b16dbeadd4abc',
+242 silly resolved     _from: 'socket.io-client@1.1.0',
+242 silly resolved     _npmVersion: '1.4.25',
+242 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+242 silly resolved     maintainers: [ [Object] ],
+242 silly resolved     dist:
+242 silly resolved      { shasum: '66b8b99c709ede111c724b7cc45b16dbeadd4abc',
+242 silly resolved        tarball: 'http://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz' },
+242 silly resolved     directories: {},
+242 silly resolved     _resolved: 'https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.1.0.tgz' } ]
+243 info install socket.io-parser@2.2.1 into /home/taojx/workspace/CCNote/node_modules/socket.io
+244 info install engine.io@1.4.0 into /home/taojx/workspace/CCNote/node_modules/socket.io
+245 info install has-binary-data@0.1.3 into /home/taojx/workspace/CCNote/node_modules/socket.io
+246 info install socket.io-adapter@0.2.0 into /home/taojx/workspace/CCNote/node_modules/socket.io
+247 info install socket.io-client@1.1.0 into /home/taojx/workspace/CCNote/node_modules/socket.io
+248 info installOne socket.io-parser@2.2.1
+249 info installOne engine.io@1.4.0
+250 info installOne has-binary-data@0.1.3
+251 info installOne socket.io-adapter@0.2.0
+252 info installOne socket.io-client@1.1.0
+253 verbose node_modules/socket.io/node_modules/socket.io-parser unbuild
+254 verbose node_modules/socket.io/node_modules/engine.io unbuild
+255 verbose node_modules/socket.io/node_modules/has-binary-data unbuild
+256 verbose node_modules/socket.io/node_modules/socket.io-adapter unbuild
+257 verbose node_modules/socket.io/node_modules/socket.io-client unbuild
+258 verbose tar unpack /home/taojx/.npm/socket.io-parser/2.2.1/package.tgz
+259 silly lockFile 674f8220-io-node-modules-socket-io-parser tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-parser
+260 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-parser /home/taojx/.npm/674f8220-io-node-modules-socket-io-parser.lock
+261 silly lockFile 0bd247eb-cket-io-parser-2-2-1-package-tgz tar:///home/taojx/.npm/socket.io-parser/2.2.1/package.tgz
+262 verbose lock tar:///home/taojx/.npm/socket.io-parser/2.2.1/package.tgz /home/taojx/.npm/0bd247eb-cket-io-parser-2-2-1-package-tgz.lock
+263 verbose tar unpack /home/taojx/.npm/engine.io/1.4.0/package.tgz
+264 silly lockFile 4d8fca07-socket-io-node-modules-engine-io tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/engine.io
+265 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/engine.io /home/taojx/.npm/4d8fca07-socket-io-node-modules-engine-io.lock
+266 silly lockFile f25fe64b--npm-engine-io-1-4-0-package-tgz tar:///home/taojx/.npm/engine.io/1.4.0/package.tgz
+267 verbose lock tar:///home/taojx/.npm/engine.io/1.4.0/package.tgz /home/taojx/.npm/f25fe64b--npm-engine-io-1-4-0-package-tgz.lock
+268 verbose tar unpack /home/taojx/.npm/has-binary-data/0.1.3/package.tgz
+269 silly lockFile 53cc3fc7--io-node-modules-has-binary-data tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data
+270 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data /home/taojx/.npm/53cc3fc7--io-node-modules-has-binary-data.lock
+271 silly lockFile 2d62cbcd-as-binary-data-0-1-3-package-tgz tar:///home/taojx/.npm/has-binary-data/0.1.3/package.tgz
+272 verbose lock tar:///home/taojx/.npm/has-binary-data/0.1.3/package.tgz /home/taojx/.npm/2d62cbcd-as-binary-data-0-1-3-package-tgz.lock
+273 verbose tar unpack /home/taojx/.npm/socket.io-adapter/0.2.0/package.tgz
+274 silly lockFile 4c27ee53-o-node-modules-socket-io-adapter tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter
+275 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter /home/taojx/.npm/4c27ee53-o-node-modules-socket-io-adapter.lock
+276 silly lockFile a95caf2d-ket-io-adapter-0-2-0-package-tgz tar:///home/taojx/.npm/socket.io-adapter/0.2.0/package.tgz
+277 verbose lock tar:///home/taojx/.npm/socket.io-adapter/0.2.0/package.tgz /home/taojx/.npm/a95caf2d-ket-io-adapter-0-2-0-package-tgz.lock
+278 verbose tar unpack /home/taojx/.npm/socket.io-client/1.1.0/package.tgz
+279 silly lockFile 7091c4df-io-node-modules-socket-io-client tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-client
+280 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-client /home/taojx/.npm/7091c4df-io-node-modules-socket-io-client.lock
+281 silly lockFile 316f8e66-cket-io-client-1-1-0-package-tgz tar:///home/taojx/.npm/socket.io-client/1.1.0/package.tgz
+282 verbose lock tar:///home/taojx/.npm/socket.io-client/1.1.0/package.tgz /home/taojx/.npm/316f8e66-cket-io-client-1-1-0-package-tgz.lock
+283 silly gunzTarPerm modes [ '775', '664' ]
+284 silly gunzTarPerm modes [ '775', '664' ]
+285 silly gunzTarPerm modes [ '775', '664' ]
+286 silly gunzTarPerm modes [ '775', '664' ]
+287 silly gunzTarPerm modes [ '775', '664' ]
+288 silly gunzTarPerm extractEntry package.json
+289 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+290 silly gunzTarPerm extractEntry package.json
+291 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+292 silly gunzTarPerm extractEntry package.json
+293 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+294 silly gunzTarPerm extractEntry package.json
+295 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+296 silly gunzTarPerm extractEntry package.json
+297 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+298 silly gunzTarPerm extractEntry .npmignore
+299 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+300 silly gunzTarPerm extractEntry binary.js
+301 silly gunzTarPerm modified mode [ 'binary.js', 420, 436 ]
+302 silly gunzTarPerm extractEntry .npmignore
+303 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+304 silly gunzTarPerm extractEntry README.md
+305 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+306 silly gunzTarPerm extractEntry .npmignore
+307 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+308 silly gunzTarPerm extractEntry README.md
+309 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+310 silly gunzTarPerm extractEntry .npmignore
+311 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+312 silly gunzTarPerm extractEntry index.js
+313 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+314 silly gunzTarPerm extractEntry .npmignore
+315 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+316 silly gunzTarPerm extractEntry README.md
+317 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+318 silly gunzTarPerm extractEntry index.js
+319 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+320 silly gunzTarPerm extractEntry .zuul.yml
+321 silly gunzTarPerm modified mode [ '.zuul.yml', 420, 436 ]
+322 silly gunzTarPerm extractEntry LICENSE
+323 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+324 silly gunzTarPerm extractEntry gen.js
+325 silly gunzTarPerm modified mode [ 'gen.js', 420, 436 ]
+326 silly gunzTarPerm extractEntry History.md
+327 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+328 silly gunzTarPerm extractEntry Readme.md
+329 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+330 silly gunzTarPerm extractEntry index.js
+331 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+332 silly gunzTarPerm extractEntry index.js
+333 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+334 silly gunzTarPerm extractEntry socket.io.js
+335 silly gunzTarPerm modified mode [ 'socket.io.js', 420, 436 ]
+336 silly gunzTarPerm extractEntry History.md
+337 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+338 silly gunzTarPerm extractEntry index.js
+339 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+340 silly gunzTarPerm extractEntry test.js
+341 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+342 silly gunzTarPerm extractEntry .travis.yml
+343 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+344 silly gunzTarPerm extractEntry History.md
+345 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+346 silly gunzTarPerm extractEntry lib/engine.io.js
+347 silly gunzTarPerm modified mode [ 'lib/engine.io.js', 420, 436 ]
+348 silly gunzTarPerm extractEntry History.md
+349 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+350 silly gunzTarPerm extractEntry Makefile
+351 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+352 silly gunzTarPerm extractEntry fixtures/big.json
+353 silly gunzTarPerm modified mode [ 'fixtures/big.json', 420, 436 ]
+354 silly gunzTarPerm extractEntry Makefile
+355 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+356 silly gunzTarPerm extractEntry .travis.yml
+357 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+358 silly gunzTarPerm extractEntry Makefile
+359 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+360 silly gunzTarPerm extractEntry .travis.yml
+361 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+362 silly gunzTarPerm extractEntry lib/index.js
+363 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+364 silly gunzTarPerm extractEntry lib/manager.js
+365 silly gunzTarPerm modified mode [ 'lib/manager.js', 420, 436 ]
+366 silly gunzTarPerm extractEntry lib/on.js
+367 silly gunzTarPerm modified mode [ 'lib/on.js', 420, 436 ]
+368 silly gunzTarPerm extractEntry lib/server.js
+369 silly gunzTarPerm modified mode [ 'lib/server.js', 420, 436 ]
+370 silly lockFile 4c27ee53-o-node-modules-socket-io-adapter tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter
+371 silly lockFile 4c27ee53-o-node-modules-socket-io-adapter tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter
+372 silly lockFile a95caf2d-ket-io-adapter-0-2-0-package-tgz tar:///home/taojx/.npm/socket.io-adapter/0.2.0/package.tgz
+373 silly lockFile a95caf2d-ket-io-adapter-0-2-0-package-tgz tar:///home/taojx/.npm/socket.io-adapter/0.2.0/package.tgz
+374 silly gunzTarPerm extractEntry bench/bench.js
+375 silly gunzTarPerm modified mode [ 'bench/bench.js', 420, 436 ]
+376 silly gunzTarPerm extractEntry bench/index.js
+377 silly gunzTarPerm modified mode [ 'bench/index.js', 420, 436 ]
+378 info preinstall socket.io-adapter@0.2.0
+379 verbose readDependencies using package.json deps
+380 silly gunzTarPerm extractEntry lib/socket.js
+381 silly gunzTarPerm modified mode [ 'lib/socket.js', 420, 436 ]
+382 silly gunzTarPerm extractEntry lib/transport.js
+383 silly gunzTarPerm modified mode [ 'lib/transport.js', 420, 436 ]
+384 silly gunzTarPerm extractEntry Readme.md
+385 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+386 verbose readDependencies using package.json deps
+387 silly gunzTarPerm extractEntry lib/transports/index.js
+388 silly gunzTarPerm modified mode [ 'lib/transports/index.js', 420, 436 ]
+389 silly gunzTarPerm extractEntry lib/transports/polling-jsonp.js
+390 silly gunzTarPerm modified mode [ 'lib/transports/polling-jsonp.js', 420, 436 ]
+391 verbose cache add [ 'socket.io-parser@2.1.2', null ]
+392 verbose cache add name=undefined spec="socket.io-parser@2.1.2" args=["socket.io-parser@2.1.2",null]
+393 verbose parsed url { protocol: null,
+393 verbose parsed url   slashes: null,
+393 verbose parsed url   auth: null,
+393 verbose parsed url   host: null,
+393 verbose parsed url   port: null,
+393 verbose parsed url   hostname: null,
+393 verbose parsed url   hash: null,
+393 verbose parsed url   search: null,
+393 verbose parsed url   query: null,
+393 verbose parsed url   pathname: 'socket.io-parser@2.1.2',
+393 verbose parsed url   path: 'socket.io-parser@2.1.2',
+393 verbose parsed url   href: 'socket.io-parser@2.1.2' }
+394 verbose cache add name="socket.io-parser" spec="2.1.2" args=["socket.io-parser","2.1.2"]
+395 verbose parsed url { protocol: null,
+395 verbose parsed url   slashes: null,
+395 verbose parsed url   auth: null,
+395 verbose parsed url   host: null,
+395 verbose parsed url   port: null,
+395 verbose parsed url   hostname: null,
+395 verbose parsed url   hash: null,
+395 verbose parsed url   search: null,
+395 verbose parsed url   query: null,
+395 verbose parsed url   pathname: '2.1.2',
+395 verbose parsed url   path: '2.1.2',
+395 verbose parsed url   href: '2.1.2' }
+396 verbose addNamed [ 'socket.io-parser', '2.1.2' ]
+397 verbose addNamed [ '2.1.2', '2.1.2' ]
+398 silly lockFile 1b541098-socket-io-parser-2-1-2 socket.io-parser@2.1.2
+399 verbose lock socket.io-parser@2.1.2 /home/taojx/.npm/1b541098-socket-io-parser-2-1-2.lock
+400 silly gunzTarPerm extractEntry lib/transports/polling-xhr.js
+401 silly gunzTarPerm modified mode [ 'lib/transports/polling-xhr.js', 420, 436 ]
+402 silly gunzTarPerm extractEntry lib/transports/polling.js
+403 silly gunzTarPerm modified mode [ 'lib/transports/polling.js', 420, 436 ]
+404 verbose registry.get https://registry.npmjs.org/socket.io-parser not expired, no request
+405 silly gunzTarPerm extractEntry lib/socket.js
+406 silly gunzTarPerm modified mode [ 'lib/socket.js', 420, 436 ]
+407 silly lockFile b4049738-arser-socket-io-parser-2-1-2-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz
+408 verbose lock https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz /home/taojx/.npm/b4049738-arser-socket-io-parser-2-1-2-tgz.lock
+409 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz',
+409 verbose addRemoteTarball   '876655b9edd555c5bdf7301cedf30a436c67b8b0' ]
+410 info retry fetch attempt 1 at 16:15:37
+411 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz
+412 http GET https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz
+413 silly gunzTarPerm extractEntry lib/transports/websocket.js
+414 silly gunzTarPerm modified mode [ 'lib/transports/websocket.js', 420, 436 ]
+415 silly gunzTarPerm extractEntry Makefile
+416 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+417 silly gunzTarPerm extractEntry lib/url.js
+418 silly gunzTarPerm modified mode [ 'lib/url.js', 420, 436 ]
+419 silly lockFile 674f8220-io-node-modules-socket-io-parser tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-parser
+420 silly lockFile 674f8220-io-node-modules-socket-io-parser tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-parser
+421 silly lockFile 0bd247eb-cket-io-parser-2-2-1-package-tgz tar:///home/taojx/.npm/socket.io-parser/2.2.1/package.tgz
+422 silly lockFile 0bd247eb-cket-io-parser-2-2-1-package-tgz tar:///home/taojx/.npm/socket.io-parser/2.2.1/package.tgz
+423 info preinstall socket.io-parser@2.2.1
+424 verbose readDependencies using package.json deps
+425 verbose readDependencies using package.json deps
+426 silly gunzTarPerm extractEntry .zuul.yml
+427 silly gunzTarPerm modified mode [ '.zuul.yml', 420, 436 ]
+428 verbose cache add [ 'isarray@0.0.1', null ]
+429 verbose cache add name=undefined spec="isarray@0.0.1" args=["isarray@0.0.1",null]
+430 verbose parsed url { protocol: null,
+430 verbose parsed url   slashes: null,
+430 verbose parsed url   auth: null,
+430 verbose parsed url   host: null,
+430 verbose parsed url   port: null,
+430 verbose parsed url   hostname: null,
+430 verbose parsed url   hash: null,
+430 verbose parsed url   search: null,
+430 verbose parsed url   query: null,
+430 verbose parsed url   pathname: 'isarray@0.0.1',
+430 verbose parsed url   path: 'isarray@0.0.1',
+430 verbose parsed url   href: 'isarray@0.0.1' }
+431 verbose cache add name="isarray" spec="0.0.1" args=["isarray","0.0.1"]
+432 verbose parsed url { protocol: null,
+432 verbose parsed url   slashes: null,
+432 verbose parsed url   auth: null,
+432 verbose parsed url   host: null,
+432 verbose parsed url   port: null,
+432 verbose parsed url   hostname: null,
+432 verbose parsed url   hash: null,
+432 verbose parsed url   search: null,
+432 verbose parsed url   query: null,
+432 verbose parsed url   pathname: '0.0.1',
+432 verbose parsed url   path: '0.0.1',
+432 verbose parsed url   href: '0.0.1' }
+433 verbose addNamed [ 'isarray', '0.0.1' ]
+434 verbose addNamed [ '0.0.1', '0.0.1' ]
+435 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+436 verbose lock isarray@0.0.1 /home/taojx/.npm/9efe11b1-isarray-0-0-1.lock
+437 verbose cache add [ 'benchmark@1.0.0', null ]
+438 verbose cache add name=undefined spec="benchmark@1.0.0" args=["benchmark@1.0.0",null]
+439 verbose parsed url { protocol: null,
+439 verbose parsed url   slashes: null,
+439 verbose parsed url   auth: null,
+439 verbose parsed url   host: null,
+439 verbose parsed url   port: null,
+439 verbose parsed url   hostname: null,
+439 verbose parsed url   hash: null,
+439 verbose parsed url   search: null,
+439 verbose parsed url   query: null,
+439 verbose parsed url   pathname: 'benchmark@1.0.0',
+439 verbose parsed url   path: 'benchmark@1.0.0',
+439 verbose parsed url   href: 'benchmark@1.0.0' }
+440 verbose cache add name="benchmark" spec="1.0.0" args=["benchmark","1.0.0"]
+441 verbose parsed url { protocol: null,
+441 verbose parsed url   slashes: null,
+441 verbose parsed url   auth: null,
+441 verbose parsed url   host: null,
+441 verbose parsed url   port: null,
+441 verbose parsed url   hostname: null,
+441 verbose parsed url   hash: null,
+441 verbose parsed url   search: null,
+441 verbose parsed url   query: null,
+441 verbose parsed url   pathname: '1.0.0',
+441 verbose parsed url   path: '1.0.0',
+441 verbose parsed url   href: '1.0.0' }
+442 verbose addNamed [ 'benchmark', '1.0.0' ]
+443 verbose addNamed [ '1.0.0', '1.0.0' ]
+444 silly lockFile 896a6c2d-benchmark-1-0-0 benchmark@1.0.0
+445 verbose lock benchmark@1.0.0 /home/taojx/.npm/896a6c2d-benchmark-1-0-0.lock
+446 verbose cache add [ 'json3@3.2.6', null ]
+447 verbose cache add name=undefined spec="json3@3.2.6" args=["json3@3.2.6",null]
+448 verbose parsed url { protocol: null,
+448 verbose parsed url   slashes: null,
+448 verbose parsed url   auth: null,
+448 verbose parsed url   host: null,
+448 verbose parsed url   port: null,
+448 verbose parsed url   hostname: null,
+448 verbose parsed url   hash: null,
+448 verbose parsed url   search: null,
+448 verbose parsed url   query: null,
+448 verbose parsed url   pathname: 'json3@3.2.6',
+448 verbose parsed url   path: 'json3@3.2.6',
+448 verbose parsed url   href: 'json3@3.2.6' }
+449 verbose cache add name="json3" spec="3.2.6" args=["json3","3.2.6"]
+450 verbose parsed url { protocol: null,
+450 verbose parsed url   slashes: null,
+450 verbose parsed url   auth: null,
+450 verbose parsed url   host: null,
+450 verbose parsed url   port: null,
+450 verbose parsed url   hostname: null,
+450 verbose parsed url   hash: null,
+450 verbose parsed url   search: null,
+450 verbose parsed url   query: null,
+450 verbose parsed url   pathname: '3.2.6',
+450 verbose parsed url   path: '3.2.6',
+450 verbose parsed url   href: '3.2.6' }
+451 verbose addNamed [ 'json3', '3.2.6' ]
+452 verbose addNamed [ '3.2.6', '3.2.6' ]
+453 silly lockFile 9a8c1b76-json3-3-2-6 json3@3.2.6
+454 verbose lock json3@3.2.6 /home/taojx/.npm/9a8c1b76-json3-3-2-6.lock
+455 verbose cache add [ 'component-emitter@1.1.2', null ]
+456 verbose cache add name=undefined spec="component-emitter@1.1.2" args=["component-emitter@1.1.2",null]
+457 verbose parsed url { protocol: null,
+457 verbose parsed url   slashes: null,
+457 verbose parsed url   auth: null,
+457 verbose parsed url   host: null,
+457 verbose parsed url   port: null,
+457 verbose parsed url   hostname: null,
+457 verbose parsed url   hash: null,
+457 verbose parsed url   search: null,
+457 verbose parsed url   query: null,
+457 verbose parsed url   pathname: 'component-emitter@1.1.2',
+457 verbose parsed url   path: 'component-emitter@1.1.2',
+457 verbose parsed url   href: 'component-emitter@1.1.2' }
+458 verbose cache add name="component-emitter" spec="1.1.2" args=["component-emitter","1.1.2"]
+459 verbose parsed url { protocol: null,
+459 verbose parsed url   slashes: null,
+459 verbose parsed url   auth: null,
+459 verbose parsed url   host: null,
+459 verbose parsed url   port: null,
+459 verbose parsed url   hostname: null,
+459 verbose parsed url   hash: null,
+459 verbose parsed url   search: null,
+459 verbose parsed url   query: null,
+459 verbose parsed url   pathname: '1.1.2',
+459 verbose parsed url   path: '1.1.2',
+459 verbose parsed url   href: '1.1.2' }
+460 verbose addNamed [ 'component-emitter', '1.1.2' ]
+461 verbose addNamed [ '1.1.2', '1.1.2' ]
+462 silly lockFile 7f1a440e-component-emitter-1-1-2 component-emitter@1.1.2
+463 verbose lock component-emitter@1.1.2 /home/taojx/.npm/7f1a440e-component-emitter-1-1-2.lock
+464 verbose request where is /benchmark
+465 verbose request registry https://registry.npmjs.org/
+466 verbose url raw /benchmark
+467 verbose url resolving [ 'https://registry.npmjs.org/', './benchmark' ]
+468 verbose url resolved https://registry.npmjs.org/benchmark
+469 verbose request where is https://registry.npmjs.org/benchmark
+470 info trying registry request attempt 1 at 16:15:37
+471 http GET https://registry.npmjs.org/benchmark
+472 silly lockFile 53cc3fc7--io-node-modules-has-binary-data tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data
+473 silly lockFile 53cc3fc7--io-node-modules-has-binary-data tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data
+474 verbose request where is /json3
+475 verbose request registry https://registry.npmjs.org/
+476 verbose url raw /json3
+477 verbose url resolving [ 'https://registry.npmjs.org/', './json3' ]
+478 verbose url resolved https://registry.npmjs.org/json3
+479 verbose request where is https://registry.npmjs.org/json3
+480 info trying registry request attempt 1 at 16:15:37
+481 http GET https://registry.npmjs.org/json3
+482 silly lockFile 2d62cbcd-as-binary-data-0-1-3-package-tgz tar:///home/taojx/.npm/has-binary-data/0.1.3/package.tgz
+483 silly lockFile 2d62cbcd-as-binary-data-0-1-3-package-tgz tar:///home/taojx/.npm/has-binary-data/0.1.3/package.tgz
+484 verbose request where is /component-emitter
+485 verbose request registry https://registry.npmjs.org/
+486 verbose url raw /component-emitter
+487 verbose url resolving [ 'https://registry.npmjs.org/', './component-emitter' ]
+488 verbose url resolved https://registry.npmjs.org/component-emitter
+489 verbose request where is https://registry.npmjs.org/component-emitter
+490 info trying registry request attempt 1 at 16:15:37
+491 http GET https://registry.npmjs.org/component-emitter
+492 info preinstall has-binary-data@0.1.3
+493 verbose request where is /isarray
+494 verbose request registry https://registry.npmjs.org/
+495 verbose url raw /isarray
+496 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+497 verbose url resolved https://registry.npmjs.org/isarray
+498 verbose request where is https://registry.npmjs.org/isarray
+499 info trying registry request attempt 1 at 16:15:37
+500 verbose etag "AI6YZ768HN0R3YEJSMBHLP9JL"
+501 http GET https://registry.npmjs.org/isarray
+502 verbose readDependencies using package.json deps
+503 verbose readDependencies using package.json deps
+504 verbose cache add [ 'isarray@0.0.1', null ]
+505 verbose cache add name=undefined spec="isarray@0.0.1" args=["isarray@0.0.1",null]
+506 verbose parsed url { protocol: null,
+506 verbose parsed url   slashes: null,
+506 verbose parsed url   auth: null,
+506 verbose parsed url   host: null,
+506 verbose parsed url   port: null,
+506 verbose parsed url   hostname: null,
+506 verbose parsed url   hash: null,
+506 verbose parsed url   search: null,
+506 verbose parsed url   query: null,
+506 verbose parsed url   pathname: 'isarray@0.0.1',
+506 verbose parsed url   path: 'isarray@0.0.1',
+506 verbose parsed url   href: 'isarray@0.0.1' }
+507 verbose cache add name="isarray" spec="0.0.1" args=["isarray","0.0.1"]
+508 verbose parsed url { protocol: null,
+508 verbose parsed url   slashes: null,
+508 verbose parsed url   auth: null,
+508 verbose parsed url   host: null,
+508 verbose parsed url   port: null,
+508 verbose parsed url   hostname: null,
+508 verbose parsed url   hash: null,
+508 verbose parsed url   search: null,
+508 verbose parsed url   query: null,
+508 verbose parsed url   pathname: '0.0.1',
+508 verbose parsed url   path: '0.0.1',
+508 verbose parsed url   href: '0.0.1' }
+509 verbose addNamed [ 'isarray', '0.0.1' ]
+510 silly lockFile 4d8fca07-socket-io-node-modules-engine-io tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/engine.io
+511 silly lockFile 4d8fca07-socket-io-node-modules-engine-io tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/engine.io
+512 silly lockFile f25fe64b--npm-engine-io-1-4-0-package-tgz tar:///home/taojx/.npm/engine.io/1.4.0/package.tgz
+513 silly lockFile f25fe64b--npm-engine-io-1-4-0-package-tgz tar:///home/taojx/.npm/engine.io/1.4.0/package.tgz
+514 info preinstall engine.io@1.4.0
+515 verbose readDependencies using package.json deps
+516 verbose readDependencies using package.json deps
+517 verbose cache add [ 'debug@1.0.3', null ]
+518 verbose cache add name=undefined spec="debug@1.0.3" args=["debug@1.0.3",null]
+519 verbose parsed url { protocol: null,
+519 verbose parsed url   slashes: null,
+519 verbose parsed url   auth: null,
+519 verbose parsed url   host: null,
+519 verbose parsed url   port: null,
+519 verbose parsed url   hostname: null,
+519 verbose parsed url   hash: null,
+519 verbose parsed url   search: null,
+519 verbose parsed url   query: null,
+519 verbose parsed url   pathname: 'debug@1.0.3',
+519 verbose parsed url   path: 'debug@1.0.3',
+519 verbose parsed url   href: 'debug@1.0.3' }
+520 verbose cache add [ 'ws@0.4.31', null ]
+521 verbose cache add name=undefined spec="ws@0.4.31" args=["ws@0.4.31",null]
+522 verbose parsed url { protocol: null,
+522 verbose parsed url   slashes: null,
+522 verbose parsed url   auth: null,
+522 verbose parsed url   host: null,
+522 verbose parsed url   port: null,
+522 verbose parsed url   hostname: null,
+522 verbose parsed url   hash: null,
+522 verbose parsed url   search: null,
+522 verbose parsed url   query: null,
+522 verbose parsed url   pathname: 'ws@0.4.31',
+522 verbose parsed url   path: 'ws@0.4.31',
+522 verbose parsed url   href: 'ws@0.4.31' }
+523 verbose cache add name="debug" spec="1.0.3" args=["debug","1.0.3"]
+524 verbose parsed url { protocol: null,
+524 verbose parsed url   slashes: null,
+524 verbose parsed url   auth: null,
+524 verbose parsed url   host: null,
+524 verbose parsed url   port: null,
+524 verbose parsed url   hostname: null,
+524 verbose parsed url   hash: null,
+524 verbose parsed url   search: null,
+524 verbose parsed url   query: null,
+524 verbose parsed url   pathname: '1.0.3',
+524 verbose parsed url   path: '1.0.3',
+524 verbose parsed url   href: '1.0.3' }
+525 verbose addNamed [ 'debug', '1.0.3' ]
+526 verbose addNamed [ '1.0.3', '1.0.3' ]
+527 silly lockFile 9e0d2b30-debug-1-0-3 debug@1.0.3
+528 verbose lock debug@1.0.3 /home/taojx/.npm/9e0d2b30-debug-1-0-3.lock
+529 verbose cache add name="ws" spec="0.4.31" args=["ws","0.4.31"]
+530 verbose parsed url { protocol: null,
+530 verbose parsed url   slashes: null,
+530 verbose parsed url   auth: null,
+530 verbose parsed url   host: null,
+530 verbose parsed url   port: null,
+530 verbose parsed url   hostname: null,
+530 verbose parsed url   hash: null,
+530 verbose parsed url   search: null,
+530 verbose parsed url   query: null,
+530 verbose parsed url   pathname: '0.4.31',
+530 verbose parsed url   path: '0.4.31',
+530 verbose parsed url   href: '0.4.31' }
+531 verbose addNamed [ 'ws', '0.4.31' ]
+532 verbose addNamed [ '0.4.31', '0.4.31' ]
+533 silly lockFile 53e67403-ws-0-4-31 ws@0.4.31
+534 verbose lock ws@0.4.31 /home/taojx/.npm/53e67403-ws-0-4-31.lock
+535 verbose cache add [ 'engine.io-parser@1.1.0', null ]
+536 verbose cache add name=undefined spec="engine.io-parser@1.1.0" args=["engine.io-parser@1.1.0",null]
+537 verbose parsed url { protocol: null,
+537 verbose parsed url   slashes: null,
+537 verbose parsed url   auth: null,
+537 verbose parsed url   host: null,
+537 verbose parsed url   port: null,
+537 verbose parsed url   hostname: null,
+537 verbose parsed url   hash: null,
+537 verbose parsed url   search: null,
+537 verbose parsed url   query: null,
+537 verbose parsed url   pathname: 'engine.io-parser@1.1.0',
+537 verbose parsed url   path: 'engine.io-parser@1.1.0',
+537 verbose parsed url   href: 'engine.io-parser@1.1.0' }
+538 verbose cache add [ 'base64id@0.1.0', null ]
+539 verbose cache add name=undefined spec="base64id@0.1.0" args=["base64id@0.1.0",null]
+540 verbose parsed url { protocol: null,
+540 verbose parsed url   slashes: null,
+540 verbose parsed url   auth: null,
+540 verbose parsed url   host: null,
+540 verbose parsed url   port: null,
+540 verbose parsed url   hostname: null,
+540 verbose parsed url   hash: null,
+540 verbose parsed url   search: null,
+540 verbose parsed url   query: null,
+540 verbose parsed url   pathname: 'base64id@0.1.0',
+540 verbose parsed url   path: 'base64id@0.1.0',
+540 verbose parsed url   href: 'base64id@0.1.0' }
+541 verbose cache add name="engine.io-parser" spec="1.1.0" args=["engine.io-parser","1.1.0"]
+542 verbose parsed url { protocol: null,
+542 verbose parsed url   slashes: null,
+542 verbose parsed url   auth: null,
+542 verbose parsed url   host: null,
+542 verbose parsed url   port: null,
+542 verbose parsed url   hostname: null,
+542 verbose parsed url   hash: null,
+542 verbose parsed url   search: null,
+542 verbose parsed url   query: null,
+542 verbose parsed url   pathname: '1.1.0',
+542 verbose parsed url   path: '1.1.0',
+542 verbose parsed url   href: '1.1.0' }
+543 verbose addNamed [ 'engine.io-parser', '1.1.0' ]
+544 verbose addNamed [ '1.1.0', '1.1.0' ]
+545 silly lockFile 21125e03-engine-io-parser-1-1-0 engine.io-parser@1.1.0
+546 verbose lock engine.io-parser@1.1.0 /home/taojx/.npm/21125e03-engine-io-parser-1-1-0.lock
+547 verbose cache add name="base64id" spec="0.1.0" args=["base64id","0.1.0"]
+548 verbose parsed url { protocol: null,
+548 verbose parsed url   slashes: null,
+548 verbose parsed url   auth: null,
+548 verbose parsed url   host: null,
+548 verbose parsed url   port: null,
+548 verbose parsed url   hostname: null,
+548 verbose parsed url   hash: null,
+548 verbose parsed url   search: null,
+548 verbose parsed url   query: null,
+548 verbose parsed url   pathname: '0.1.0',
+548 verbose parsed url   path: '0.1.0',
+548 verbose parsed url   href: '0.1.0' }
+549 verbose addNamed [ 'base64id', '0.1.0' ]
+550 verbose addNamed [ '0.1.0', '0.1.0' ]
+551 silly lockFile b2185bf4-base64id-0-1-0 base64id@0.1.0
+552 verbose lock base64id@0.1.0 /home/taojx/.npm/b2185bf4-base64id-0-1-0.lock
+553 verbose request where is /ws
+554 verbose request registry https://registry.npmjs.org/
+555 verbose url raw /ws
+556 verbose url resolving [ 'https://registry.npmjs.org/', './ws' ]
+557 verbose url resolved https://registry.npmjs.org/ws
+558 verbose request where is https://registry.npmjs.org/ws
+559 info trying registry request attempt 1 at 16:15:37
+560 http GET https://registry.npmjs.org/ws
+561 verbose request where is /engine.io-parser
+562 verbose request registry https://registry.npmjs.org/
+563 verbose url raw /engine.io-parser
+564 verbose url resolving [ 'https://registry.npmjs.org/', './engine.io-parser' ]
+565 verbose url resolved https://registry.npmjs.org/engine.io-parser
+566 verbose request where is https://registry.npmjs.org/engine.io-parser
+567 info trying registry request attempt 1 at 16:15:37
+568 http GET https://registry.npmjs.org/engine.io-parser
+569 verbose request where is /base64id
+570 verbose request registry https://registry.npmjs.org/
+571 verbose url raw /base64id
+572 verbose url resolving [ 'https://registry.npmjs.org/', './base64id' ]
+573 verbose url resolved https://registry.npmjs.org/base64id
+574 verbose request where is https://registry.npmjs.org/base64id
+575 info trying registry request attempt 1 at 16:15:37
+576 http GET https://registry.npmjs.org/base64id
+577 silly lockFile 7091c4df-io-node-modules-socket-io-client tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-client
+578 silly lockFile 7091c4df-io-node-modules-socket-io-client tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-client
+579 silly lockFile 316f8e66-cket-io-client-1-1-0-package-tgz tar:///home/taojx/.npm/socket.io-client/1.1.0/package.tgz
+580 silly lockFile 316f8e66-cket-io-client-1-1-0-package-tgz tar:///home/taojx/.npm/socket.io-client/1.1.0/package.tgz
+581 info preinstall socket.io-client@1.1.0
+582 verbose request where is /debug
+583 verbose request registry https://registry.npmjs.org/
+584 verbose url raw /debug
+585 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+586 verbose url resolved https://registry.npmjs.org/debug
+587 verbose request where is https://registry.npmjs.org/debug
+588 info trying registry request attempt 1 at 16:15:37
+589 verbose etag "8GS2Y1PXOCFVKAR7862Q9LURX"
+590 http GET https://registry.npmjs.org/debug
+591 verbose readDependencies using package.json deps
+592 verbose readDependencies using package.json deps
+593 verbose cache add [ 'component-emitter@1.1.2', null ]
+594 verbose cache add name=undefined spec="component-emitter@1.1.2" args=["component-emitter@1.1.2",null]
+595 verbose parsed url { protocol: null,
+595 verbose parsed url   slashes: null,
+595 verbose parsed url   auth: null,
+595 verbose parsed url   host: null,
+595 verbose parsed url   port: null,
+595 verbose parsed url   hostname: null,
+595 verbose parsed url   hash: null,
+595 verbose parsed url   search: null,
+595 verbose parsed url   query: null,
+595 verbose parsed url   pathname: 'component-emitter@1.1.2',
+595 verbose parsed url   path: 'component-emitter@1.1.2',
+595 verbose parsed url   href: 'component-emitter@1.1.2' }
+596 verbose cache add [ 'object-component@0.0.3', null ]
+597 verbose cache add name=undefined spec="object-component@0.0.3" args=["object-component@0.0.3",null]
+598 verbose parsed url { protocol: null,
+598 verbose parsed url   slashes: null,
+598 verbose parsed url   auth: null,
+598 verbose parsed url   host: null,
+598 verbose parsed url   port: null,
+598 verbose parsed url   hostname: null,
+598 verbose parsed url   hash: null,
+598 verbose parsed url   search: null,
+598 verbose parsed url   query: null,
+598 verbose parsed url   pathname: 'object-component@0.0.3',
+598 verbose parsed url   path: 'object-component@0.0.3',
+598 verbose parsed url   href: 'object-component@0.0.3' }
+599 verbose cache add name="component-emitter" spec="1.1.2" args=["component-emitter","1.1.2"]
+600 verbose parsed url { protocol: null,
+600 verbose parsed url   slashes: null,
+600 verbose parsed url   auth: null,
+600 verbose parsed url   host: null,
+600 verbose parsed url   port: null,
+600 verbose parsed url   hostname: null,
+600 verbose parsed url   hash: null,
+600 verbose parsed url   search: null,
+600 verbose parsed url   query: null,
+600 verbose parsed url   pathname: '1.1.2',
+600 verbose parsed url   path: '1.1.2',
+600 verbose parsed url   href: '1.1.2' }
+601 verbose addNamed [ 'component-emitter', '1.1.2' ]
+602 verbose cache add name="object-component" spec="0.0.3" args=["object-component","0.0.3"]
+603 verbose parsed url { protocol: null,
+603 verbose parsed url   slashes: null,
+603 verbose parsed url   auth: null,
+603 verbose parsed url   host: null,
+603 verbose parsed url   port: null,
+603 verbose parsed url   hostname: null,
+603 verbose parsed url   hash: null,
+603 verbose parsed url   search: null,
+603 verbose parsed url   query: null,
+603 verbose parsed url   pathname: '0.0.3',
+603 verbose parsed url   path: '0.0.3',
+603 verbose parsed url   href: '0.0.3' }
+604 verbose addNamed [ 'object-component', '0.0.3' ]
+605 verbose addNamed [ '0.0.3', '0.0.3' ]
+606 silly lockFile fc820aee-object-component-0-0-3 object-component@0.0.3
+607 verbose lock object-component@0.0.3 /home/taojx/.npm/fc820aee-object-component-0-0-3.lock
+608 verbose cache add [ 'socket.io-parser@2.2.2', null ]
+609 verbose cache add name=undefined spec="socket.io-parser@2.2.2" args=["socket.io-parser@2.2.2",null]
+610 verbose parsed url { protocol: null,
+610 verbose parsed url   slashes: null,
+610 verbose parsed url   auth: null,
+610 verbose parsed url   host: null,
+610 verbose parsed url   port: null,
+610 verbose parsed url   hostname: null,
+610 verbose parsed url   hash: null,
+610 verbose parsed url   search: null,
+610 verbose parsed url   query: null,
+610 verbose parsed url   pathname: 'socket.io-parser@2.2.2',
+610 verbose parsed url   path: 'socket.io-parser@2.2.2',
+610 verbose parsed url   href: 'socket.io-parser@2.2.2' }
+611 verbose cache add name="socket.io-parser" spec="2.2.2" args=["socket.io-parser","2.2.2"]
+612 verbose parsed url { protocol: null,
+612 verbose parsed url   slashes: null,
+612 verbose parsed url   auth: null,
+612 verbose parsed url   host: null,
+612 verbose parsed url   port: null,
+612 verbose parsed url   hostname: null,
+612 verbose parsed url   hash: null,
+612 verbose parsed url   search: null,
+612 verbose parsed url   query: null,
+612 verbose parsed url   pathname: '2.2.2',
+612 verbose parsed url   path: '2.2.2',
+612 verbose parsed url   href: '2.2.2' }
+613 verbose addNamed [ 'socket.io-parser', '2.2.2' ]
+614 verbose addNamed [ '2.2.2', '2.2.2' ]
+615 silly lockFile e1b3ecb4-socket-io-parser-2-2-2 socket.io-parser@2.2.2
+616 verbose lock socket.io-parser@2.2.2 /home/taojx/.npm/e1b3ecb4-socket-io-parser-2-2-2.lock
+617 verbose cache add [ 'has-binary@0.1.5', null ]
+618 verbose cache add name=undefined spec="has-binary@0.1.5" args=["has-binary@0.1.5",null]
+619 verbose parsed url { protocol: null,
+619 verbose parsed url   slashes: null,
+619 verbose parsed url   auth: null,
+619 verbose parsed url   host: null,
+619 verbose parsed url   port: null,
+619 verbose parsed url   hostname: null,
+619 verbose parsed url   hash: null,
+619 verbose parsed url   search: null,
+619 verbose parsed url   query: null,
+619 verbose parsed url   pathname: 'has-binary@0.1.5',
+619 verbose parsed url   path: 'has-binary@0.1.5',
+619 verbose parsed url   href: 'has-binary@0.1.5' }
+620 verbose request where is /object-component
+621 verbose request registry https://registry.npmjs.org/
+622 verbose url raw /object-component
+623 verbose url resolving [ 'https://registry.npmjs.org/', './object-component' ]
+624 verbose url resolved https://registry.npmjs.org/object-component
+625 verbose request where is https://registry.npmjs.org/object-component
+626 info trying registry request attempt 1 at 16:15:37
+627 http GET https://registry.npmjs.org/object-component
+628 verbose cache add [ 'indexof@0.0.1', null ]
+629 verbose cache add name=undefined spec="indexof@0.0.1" args=["indexof@0.0.1",null]
+630 verbose parsed url { protocol: null,
+630 verbose parsed url   slashes: null,
+630 verbose parsed url   auth: null,
+630 verbose parsed url   host: null,
+630 verbose parsed url   port: null,
+630 verbose parsed url   hostname: null,
+630 verbose parsed url   hash: null,
+630 verbose parsed url   search: null,
+630 verbose parsed url   query: null,
+630 verbose parsed url   pathname: 'indexof@0.0.1',
+630 verbose parsed url   path: 'indexof@0.0.1',
+630 verbose parsed url   href: 'indexof@0.0.1' }
+631 verbose cache add name="has-binary" spec="0.1.5" args=["has-binary","0.1.5"]
+632 verbose parsed url { protocol: null,
+632 verbose parsed url   slashes: null,
+632 verbose parsed url   auth: null,
+632 verbose parsed url   host: null,
+632 verbose parsed url   port: null,
+632 verbose parsed url   hostname: null,
+632 verbose parsed url   hash: null,
+632 verbose parsed url   search: null,
+632 verbose parsed url   query: null,
+632 verbose parsed url   pathname: '0.1.5',
+632 verbose parsed url   path: '0.1.5',
+632 verbose parsed url   href: '0.1.5' }
+633 verbose addNamed [ 'has-binary', '0.1.5' ]
+634 verbose addNamed [ '0.1.5', '0.1.5' ]
+635 silly lockFile b7d6729a-has-binary-0-1-5 has-binary@0.1.5
+636 verbose lock has-binary@0.1.5 /home/taojx/.npm/b7d6729a-has-binary-0-1-5.lock
+637 verbose cache add [ 'parseuri@0.0.2', null ]
+638 verbose cache add name=undefined spec="parseuri@0.0.2" args=["parseuri@0.0.2",null]
+639 verbose parsed url { protocol: null,
+639 verbose parsed url   slashes: null,
+639 verbose parsed url   auth: null,
+639 verbose parsed url   host: null,
+639 verbose parsed url   port: null,
+639 verbose parsed url   hostname: null,
+639 verbose parsed url   hash: null,
+639 verbose parsed url   search: null,
+639 verbose parsed url   query: null,
+639 verbose parsed url   pathname: 'parseuri@0.0.2',
+639 verbose parsed url   path: 'parseuri@0.0.2',
+639 verbose parsed url   href: 'parseuri@0.0.2' }
+640 verbose cache add name="indexof" spec="0.0.1" args=["indexof","0.0.1"]
+641 verbose parsed url { protocol: null,
+641 verbose parsed url   slashes: null,
+641 verbose parsed url   auth: null,
+641 verbose parsed url   host: null,
+641 verbose parsed url   port: null,
+641 verbose parsed url   hostname: null,
+641 verbose parsed url   hash: null,
+641 verbose parsed url   search: null,
+641 verbose parsed url   query: null,
+641 verbose parsed url   pathname: '0.0.1',
+641 verbose parsed url   path: '0.0.1',
+641 verbose parsed url   href: '0.0.1' }
+642 verbose addNamed [ 'indexof', '0.0.1' ]
+643 verbose addNamed [ '0.0.1', '0.0.1' ]
+644 silly lockFile eb104ead-indexof-0-0-1 indexof@0.0.1
+645 verbose lock indexof@0.0.1 /home/taojx/.npm/eb104ead-indexof-0-0-1.lock
+646 verbose cache add [ 'to-array@0.1.3', null ]
+647 verbose cache add name=undefined spec="to-array@0.1.3" args=["to-array@0.1.3",null]
+648 verbose parsed url { protocol: null,
+648 verbose parsed url   slashes: null,
+648 verbose parsed url   auth: null,
+648 verbose parsed url   host: null,
+648 verbose parsed url   port: null,
+648 verbose parsed url   hostname: null,
+648 verbose parsed url   hash: null,
+648 verbose parsed url   search: null,
+648 verbose parsed url   query: null,
+648 verbose parsed url   pathname: 'to-array@0.1.3',
+648 verbose parsed url   path: 'to-array@0.1.3',
+648 verbose parsed url   href: 'to-array@0.1.3' }
+649 verbose cache add name="parseuri" spec="0.0.2" args=["parseuri","0.0.2"]
+650 verbose parsed url { protocol: null,
+650 verbose parsed url   slashes: null,
+650 verbose parsed url   auth: null,
+650 verbose parsed url   host: null,
+650 verbose parsed url   port: null,
+650 verbose parsed url   hostname: null,
+650 verbose parsed url   hash: null,
+650 verbose parsed url   search: null,
+650 verbose parsed url   query: null,
+650 verbose parsed url   pathname: '0.0.2',
+650 verbose parsed url   path: '0.0.2',
+650 verbose parsed url   href: '0.0.2' }
+651 verbose addNamed [ 'parseuri', '0.0.2' ]
+652 verbose addNamed [ '0.0.2', '0.0.2' ]
+653 silly lockFile 2ce39ba2-parseuri-0-0-2 parseuri@0.0.2
+654 verbose lock parseuri@0.0.2 /home/taojx/.npm/2ce39ba2-parseuri-0-0-2.lock
+655 verbose cache add name="to-array" spec="0.1.3" args=["to-array","0.1.3"]
+656 verbose parsed url { protocol: null,
+656 verbose parsed url   slashes: null,
+656 verbose parsed url   auth: null,
+656 verbose parsed url   host: null,
+656 verbose parsed url   port: null,
+656 verbose parsed url   hostname: null,
+656 verbose parsed url   hash: null,
+656 verbose parsed url   search: null,
+656 verbose parsed url   query: null,
+656 verbose parsed url   pathname: '0.1.3',
+656 verbose parsed url   path: '0.1.3',
+656 verbose parsed url   href: '0.1.3' }
+657 verbose addNamed [ 'to-array', '0.1.3' ]
+658 verbose addNamed [ '0.1.3', '0.1.3' ]
+659 silly lockFile 72ca02c7-to-array-0-1-3 to-array@0.1.3
+660 verbose lock to-array@0.1.3 /home/taojx/.npm/72ca02c7-to-array-0-1-3.lock
+661 verbose cache add [ 'engine.io-client@1.4.0', null ]
+662 verbose cache add name=undefined spec="engine.io-client@1.4.0" args=["engine.io-client@1.4.0",null]
+663 verbose parsed url { protocol: null,
+663 verbose parsed url   slashes: null,
+663 verbose parsed url   auth: null,
+663 verbose parsed url   host: null,
+663 verbose parsed url   port: null,
+663 verbose parsed url   hostname: null,
+663 verbose parsed url   hash: null,
+663 verbose parsed url   search: null,
+663 verbose parsed url   query: null,
+663 verbose parsed url   pathname: 'engine.io-client@1.4.0',
+663 verbose parsed url   path: 'engine.io-client@1.4.0',
+663 verbose parsed url   href: 'engine.io-client@1.4.0' }
+664 verbose request where is /has-binary
+665 verbose request registry https://registry.npmjs.org/
+666 verbose url raw /has-binary
+667 verbose url resolving [ 'https://registry.npmjs.org/', './has-binary' ]
+668 verbose url resolved https://registry.npmjs.org/has-binary
+669 verbose request where is https://registry.npmjs.org/has-binary
+670 info trying registry request attempt 1 at 16:15:37
+671 http GET https://registry.npmjs.org/has-binary
+672 verbose cache add [ 'component-bind@1.0.0', null ]
+673 verbose cache add name=undefined spec="component-bind@1.0.0" args=["component-bind@1.0.0",null]
+674 verbose parsed url { protocol: null,
+674 verbose parsed url   slashes: null,
+674 verbose parsed url   auth: null,
+674 verbose parsed url   host: null,
+674 verbose parsed url   port: null,
+674 verbose parsed url   hostname: null,
+674 verbose parsed url   hash: null,
+674 verbose parsed url   search: null,
+674 verbose parsed url   query: null,
+674 verbose parsed url   pathname: 'component-bind@1.0.0',
+674 verbose parsed url   path: 'component-bind@1.0.0',
+674 verbose parsed url   href: 'component-bind@1.0.0' }
+675 verbose cache add name="engine.io-client" spec="1.4.0" args=["engine.io-client","1.4.0"]
+676 verbose parsed url { protocol: null,
+676 verbose parsed url   slashes: null,
+676 verbose parsed url   auth: null,
+676 verbose parsed url   host: null,
+676 verbose parsed url   port: null,
+676 verbose parsed url   hostname: null,
+676 verbose parsed url   hash: null,
+676 verbose parsed url   search: null,
+676 verbose parsed url   query: null,
+676 verbose parsed url   pathname: '1.4.0',
+676 verbose parsed url   path: '1.4.0',
+676 verbose parsed url   href: '1.4.0' }
+677 verbose addNamed [ 'engine.io-client', '1.4.0' ]
+678 verbose addNamed [ '1.4.0', '1.4.0' ]
+679 silly lockFile 04f9154a-engine-io-client-1-4-0 engine.io-client@1.4.0
+680 verbose lock engine.io-client@1.4.0 /home/taojx/.npm/04f9154a-engine-io-client-1-4-0.lock
+681 verbose request where is /indexof
+682 verbose request registry https://registry.npmjs.org/
+683 verbose url raw /indexof
+684 verbose url resolving [ 'https://registry.npmjs.org/', './indexof' ]
+685 verbose url resolved https://registry.npmjs.org/indexof
+686 verbose request where is https://registry.npmjs.org/indexof
+687 info trying registry request attempt 1 at 16:15:37
+688 http GET https://registry.npmjs.org/indexof
+689 verbose cache add name="component-bind" spec="1.0.0" args=["component-bind","1.0.0"]
+690 verbose parsed url { protocol: null,
+690 verbose parsed url   slashes: null,
+690 verbose parsed url   auth: null,
+690 verbose parsed url   host: null,
+690 verbose parsed url   port: null,
+690 verbose parsed url   hostname: null,
+690 verbose parsed url   hash: null,
+690 verbose parsed url   search: null,
+690 verbose parsed url   query: null,
+690 verbose parsed url   pathname: '1.0.0',
+690 verbose parsed url   path: '1.0.0',
+690 verbose parsed url   href: '1.0.0' }
+691 verbose addNamed [ 'component-bind', '1.0.0' ]
+692 verbose addNamed [ '1.0.0', '1.0.0' ]
+693 silly lockFile 841d34ea-component-bind-1-0-0 component-bind@1.0.0
+694 verbose lock component-bind@1.0.0 /home/taojx/.npm/841d34ea-component-bind-1-0-0.lock
+695 verbose request where is /parseuri
+696 verbose request registry https://registry.npmjs.org/
+697 verbose url raw /parseuri
+698 verbose url resolving [ 'https://registry.npmjs.org/', './parseuri' ]
+699 verbose url resolved https://registry.npmjs.org/parseuri
+700 verbose request where is https://registry.npmjs.org/parseuri
+701 info trying registry request attempt 1 at 16:15:37
+702 http GET https://registry.npmjs.org/parseuri
+703 verbose registry.get https://registry.npmjs.org/socket.io-parser not expired, no request
+704 verbose request where is /to-array
+705 verbose request registry https://registry.npmjs.org/
+706 verbose url raw /to-array
+707 verbose url resolving [ 'https://registry.npmjs.org/', './to-array' ]
+708 verbose url resolved https://registry.npmjs.org/to-array
+709 verbose request where is https://registry.npmjs.org/to-array
+710 info trying registry request attempt 1 at 16:15:37
+711 http GET https://registry.npmjs.org/to-array
+712 silly lockFile 19734d10-arser-socket-io-parser-2-2-2-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz
+713 verbose lock https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz /home/taojx/.npm/19734d10-arser-socket-io-parser-2-2-2-tgz.lock
+714 verbose request where is /engine.io-client
+715 verbose request registry https://registry.npmjs.org/
+716 verbose url raw /engine.io-client
+717 verbose url resolving [ 'https://registry.npmjs.org/', './engine.io-client' ]
+718 verbose url resolved https://registry.npmjs.org/engine.io-client
+719 verbose request where is https://registry.npmjs.org/engine.io-client
+720 info trying registry request attempt 1 at 16:15:37
+721 http GET https://registry.npmjs.org/engine.io-client
+722 verbose request where is /component-bind
+723 verbose request registry https://registry.npmjs.org/
+724 verbose url raw /component-bind
+725 verbose url resolving [ 'https://registry.npmjs.org/', './component-bind' ]
+726 verbose url resolved https://registry.npmjs.org/component-bind
+727 verbose request where is https://registry.npmjs.org/component-bind
+728 info trying registry request attempt 1 at 16:15:37
+729 http GET https://registry.npmjs.org/component-bind
+730 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz',
+730 verbose addRemoteTarball   '3d7af6b64497e956b7d9fe775f999716027f9417' ]
+731 info retry fetch attempt 1 at 16:15:37
+732 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz
+733 http GET https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.2.tgz
+734 http 200 https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz
+735 silly lockFile b4049738-arser-socket-io-parser-2-1-2-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz
+736 silly lockFile b4049738-arser-socket-io-parser-2-1-2-tgz https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz
+737 silly lockFile 1b541098-socket-io-parser-2-1-2 socket.io-parser@2.1.2
+738 silly lockFile 1b541098-socket-io-parser-2-1-2 socket.io-parser@2.1.2
+739 silly resolved [ { name: 'socket.io-parser',
+739 silly resolved     version: '2.1.2',
+739 silly resolved     description: 'socket.io protocol parser',
+739 silly resolved     repository:
+739 silly resolved      { type: 'git',
+739 silly resolved        url: 'https://github.com/LearnBoost/socket.io-parser.git' },
+739 silly resolved     dependencies:
+739 silly resolved      { debug: '0.7.4',
+739 silly resolved        json3: '3.2.6',
+739 silly resolved        emitter: 'http://github.com/component/emitter/archive/1.0.1.tar.gz',
+739 silly resolved        isarray: '0.0.1' },
+739 silly resolved     devDependencies: { mocha: '1.16.2', 'expect.js': '0.2.0', zuul: '1.5.4' },
+739 silly resolved     component: { scripts: [Object] },
+739 silly resolved     scripts: { test: 'make test' },
+739 silly resolved     bugs: { url: 'https://github.com/LearnBoost/socket.io-parser/issues' },
+739 silly resolved     homepage: 'https://github.com/LearnBoost/socket.io-parser',
+739 silly resolved     _id: 'socket.io-parser@2.1.2',
+739 silly resolved     dist:
+739 silly resolved      { shasum: '876655b9edd555c5bdf7301cedf30a436c67b8b0',
+739 silly resolved        tarball: 'http://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz' },
+739 silly resolved     _from: 'socket.io-parser@2.1.2',
+739 silly resolved     _npmVersion: '1.4.3',
+739 silly resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+739 silly resolved     maintainers: [ [Object] ],
+739 silly resolved     directories: {},
+739 silly resolved     _shasum: '876655b9edd555c5bdf7301cedf30a436c67b8b0',
+739 silly resolved     _resolved: 'https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.1.2.tgz' } ]
+740 info install socket.io-parser@2.1.2 into /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter
+741 info installOne socket.io-parser@2.1.2
+742 verbose node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser unbuild
+743 verbose tar unpack /home/taojx/.npm/socket.io-parser/2.1.2/package.tgz
+744 silly lockFile f52bbdfa-er-node-modules-socket-io-parser tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser
+745 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser /home/taojx/.npm/f52bbdfa-er-node-modules-socket-io-parser.lock
+746 silly lockFile 426a4042-cket-io-parser-2-1-2-package-tgz tar:///home/taojx/.npm/socket.io-parser/2.1.2/package.tgz
+747 verbose lock tar:///home/taojx/.npm/socket.io-parser/2.1.2/package.tgz /home/taojx/.npm/426a4042-cket-io-parser-2-1-2-package-tgz.lock
+748 silly gunzTarPerm modes [ '775', '664' ]
+749 silly gunzTarPerm extractEntry package.json
+750 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+751 silly gunzTarPerm extractEntry .npmignore
+752 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+753 silly gunzTarPerm extractEntry binary.js
+754 silly gunzTarPerm modified mode [ 'binary.js', 420, 436 ]
+755 silly gunzTarPerm extractEntry index.js
+756 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+757 silly gunzTarPerm extractEntry .travis.yml
+758 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+759 silly gunzTarPerm extractEntry .zuul.yml
+760 silly gunzTarPerm modified mode [ '.zuul.yml', 420, 436 ]
+761 silly gunzTarPerm extractEntry History.md
+762 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+763 silly gunzTarPerm extractEntry Makefile
+764 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+765 silly gunzTarPerm extractEntry Readme.md
+766 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+767 silly lockFile f52bbdfa-er-node-modules-socket-io-parser tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser
+768 silly lockFile f52bbdfa-er-node-modules-socket-io-parser tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/socket.io-parser
+769 silly lockFile 426a4042-cket-io-parser-2-1-2-package-tgz tar:///home/taojx/.npm/socket.io-parser/2.1.2/package.tgz
+770 silly lockFile 426a4042-cket-io-parser-2-1-2-package-tgz tar:///home/taojx/.npm/socket.io-parser/2.1.2/package.tgz
+771 info preinstall socket.io-parser@2.1.2
+772 verbose readDependencies using package.json deps
+773 verbose readDependencies using package.json deps
+774 verbose cache add [ 'json3@3.2.6', null ]
+775 verbose cache add name=undefined spec="json3@3.2.6" args=["json3@3.2.6",null]
+776 verbose parsed url { protocol: null,
+776 verbose parsed url   slashes: null,
+776 verbose parsed url   auth: null,
+776 verbose parsed url   host: null,
+776 verbose parsed url   port: null,
+776 verbose parsed url   hostname: null,
+776 verbose parsed url   hash: null,
+776 verbose parsed url   search: null,
+776 verbose parsed url   query: null,
+776 verbose parsed url   pathname: 'json3@3.2.6',
+776 verbose parsed url   path: 'json3@3.2.6',
+776 verbose parsed url   href: 'json3@3.2.6' }
+777 verbose cache add [ 'emitter@http://github.com/component/emitter/archive/1.0.1.tar.gz',
+777 verbose cache add   null ]
+778 verbose cache add name=undefined spec="emitter@http://github.com/component/emitter/archive/1.0.1.tar.gz" args=["emitter@http://github.com/component/emitter/archive/1.0.1.tar.gz",null]
+779 verbose parsed url { protocol: null,
+779 verbose parsed url   slashes: null,
+779 verbose parsed url   auth: null,
+779 verbose parsed url   host: null,
+779 verbose parsed url   port: null,
+779 verbose parsed url   hostname: null,
+779 verbose parsed url   hash: null,
+779 verbose parsed url   search: null,
+779 verbose parsed url   query: null,
+779 verbose parsed url   pathname: 'emitter@http://github.com/component/emitter/archive/1.0.1.tar.gz',
+779 verbose parsed url   path: 'emitter@http://github.com/component/emitter/archive/1.0.1.tar.gz',
+779 verbose parsed url   href: 'emitter@http://github.com/component/emitter/archive/1.0.1.tar.gz' }
+780 verbose cache add name="json3" spec="3.2.6" args=["json3","3.2.6"]
+781 verbose parsed url { protocol: null,
+781 verbose parsed url   slashes: null,
+781 verbose parsed url   auth: null,
+781 verbose parsed url   host: null,
+781 verbose parsed url   port: null,
+781 verbose parsed url   hostname: null,
+781 verbose parsed url   hash: null,
+781 verbose parsed url   search: null,
+781 verbose parsed url   query: null,
+781 verbose parsed url   pathname: '3.2.6',
+781 verbose parsed url   path: '3.2.6',
+781 verbose parsed url   href: '3.2.6' }
+782 verbose addNamed [ 'json3', '3.2.6' ]
+783 verbose cache add name="emitter" spec="http://github.com/component/emitter/archive/1.0.1.tar.gz" args=["emitter","http://github.com/component/emitter/archive/1.0.1.tar.gz"]
+784 verbose parsed url { protocol: 'http:',
+784 verbose parsed url   slashes: true,
+784 verbose parsed url   auth: null,
+784 verbose parsed url   host: 'github.com',
+784 verbose parsed url   port: null,
+784 verbose parsed url   hostname: 'github.com',
+784 verbose parsed url   hash: null,
+784 verbose parsed url   search: null,
+784 verbose parsed url   query: null,
+784 verbose parsed url   pathname: '/component/emitter/archive/1.0.1.tar.gz',
+784 verbose parsed url   path: '/component/emitter/archive/1.0.1.tar.gz',
+784 verbose parsed url   href: 'http://github.com/component/emitter/archive/1.0.1.tar.gz' }
+785 silly lockFile 1c67d964-ent-emitter-archive-1-0-1-tar-gz http://github.com/component/emitter/archive/1.0.1.tar.gz
+786 verbose lock http://github.com/component/emitter/archive/1.0.1.tar.gz /home/taojx/.npm/1c67d964-ent-emitter-archive-1-0-1-tar-gz.lock
+787 verbose cache add [ 'isarray@0.0.1', null ]
+788 verbose cache add name=undefined spec="isarray@0.0.1" args=["isarray@0.0.1",null]
+789 verbose parsed url { protocol: null,
+789 verbose parsed url   slashes: null,
+789 verbose parsed url   auth: null,
+789 verbose parsed url   host: null,
+789 verbose parsed url   port: null,
+789 verbose parsed url   hostname: null,
+789 verbose parsed url   hash: null,
+789 verbose parsed url   search: null,
+789 verbose parsed url   query: null,
+789 verbose parsed url   pathname: 'isarray@0.0.1',
+789 verbose parsed url   path: 'isarray@0.0.1',
+789 verbose parsed url   href: 'isarray@0.0.1' }
+790 verbose cache add name="isarray" spec="0.0.1" args=["isarray","0.0.1"]
+791 verbose parsed url { protocol: null,
+791 verbose parsed url   slashes: null,
+791 verbose parsed url   auth: null,
+791 verbose parsed url   host: null,
+791 verbose parsed url   port: null,
+791 verbose parsed url   hostname: null,
+791 verbose parsed url   hash: null,
+791 verbose parsed url   search: null,
+791 verbose parsed url   query: null,
+791 verbose parsed url   pathname: '0.0.1',
+791 verbose parsed url   path: '0.0.1',
+791 verbose parsed url   href: '0.0.1' }
+792 verbose addNamed [ 'isarray', '0.0.1' ]
+793 verbose addRemoteTarball [ 'http://github.com/component/emitter/archive/1.0.1.tar.gz',
+793 verbose addRemoteTarball   null ]
+794 info retry fetch attempt 1 at 16:15:38
+795 verbose fetch to= /tmp/npm-16623-j4Qtiy00/github.com/component/emitter/archive/1.0.1.tar.gz
+796 http GET http://github.com/component/emitter/archive/1.0.1.tar.gz
+797 http 200 https://registry.npmjs.org/benchmark
+798 silly registry.get cb [ 200,
+798 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:37 GMT',
+798 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+798 silly registry.get     etag: '"DN9AKZ6UYQ0V054BEURI8KIKS"',
+798 silly registry.get     'content-type': 'application/json',
+798 silly registry.get     'cache-control': 'max-age=60',
+798 silly registry.get     'content-length': '27240',
+798 silly registry.get     'accept-ranges': 'bytes',
+798 silly registry.get     via: '1.1 varnish',
+798 silly registry.get     age: '485',
+798 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+798 silly registry.get     'x-cache': 'HIT',
+798 silly registry.get     'x-cache-hits': '1',
+798 silly registry.get     'x-timer': 'S1412583337.735727,VS0,VE117',
+798 silly registry.get     vary: 'Accept',
+798 silly registry.get     'keep-alive': 'timeout=10, max=50',
+798 silly registry.get     connection: 'Keep-Alive' } ]
+799 silly lockFile 8c79fb7a-rg-benchmark-benchmark-1-0-0-tgz https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz
+800 verbose lock https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz /home/taojx/.npm/8c79fb7a-rg-benchmark-benchmark-1-0-0-tgz.lock
+801 verbose addRemoteTarball [ 'https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz',
+801 verbose addRemoteTarball   '2f1e2fa4c359f11122aa183082218e957e390c73' ]
+802 info retry fetch attempt 1 at 16:15:38
+803 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz
+804 http GET https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz
+805 http 200 https://registry.npmjs.org/json3
+806 silly registry.get cb [ 200,
+806 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:37 GMT',
+806 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+806 silly registry.get     etag: '"BNMT7QWONSTAPDRUXRLN04QFJ"',
+806 silly registry.get     'content-type': 'application/json',
+806 silly registry.get     'cache-control': 'max-age=60',
+806 silly registry.get     'content-length': '24695',
+806 silly registry.get     'accept-ranges': 'bytes',
+806 silly registry.get     via: '1.1 varnish',
+806 silly registry.get     age: '199',
+806 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+806 silly registry.get     'x-cache': 'HIT',
+806 silly registry.get     'x-cache-hits': '1',
+806 silly registry.get     'x-timer': 'S1412583337.683491,VS0,VE188',
+806 silly registry.get     vary: 'Accept',
+806 silly registry.get     'keep-alive': 'timeout=10, max=50',
+806 silly registry.get     connection: 'Keep-Alive' } ]
+807 silly lockFile ab66987f--npmjs-org-json3-json3-3-2-6-tgz https://registry.npmjs.org/json3/-/json3-3.2.6.tgz
+808 verbose lock https://registry.npmjs.org/json3/-/json3-3.2.6.tgz /home/taojx/.npm/ab66987f--npmjs-org-json3-json3-3-2-6-tgz.lock
+809 verbose addRemoteTarball [ 'https://registry.npmjs.org/json3/-/json3-3.2.6.tgz',
+809 verbose addRemoteTarball   'f6efc93c06a04de9aec53053df2559bb19e2038b' ]
+810 info retry fetch attempt 1 at 16:15:38
+811 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/json3/-/json3-3.2.6.tgz
+812 http GET https://registry.npmjs.org/json3/-/json3-3.2.6.tgz
+813 http 304 https://registry.npmjs.org/isarray
+814 silly registry.get cb [ 304,
+814 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+814 silly registry.get     server: 'Apache',
+814 silly registry.get     via: '1.1 varnish',
+814 silly registry.get     'last-modified': 'Mon, 06 Oct 2014 08:14:07 GMT',
+814 silly registry.get     'cache-control': 'max-age=60',
+814 silly registry.get     etag: '"AI6YZ768HN0R3YEJSMBHLP9JL"',
+814 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+814 silly registry.get     'x-cache': 'HIT',
+814 silly registry.get     'x-cache-hits': '22',
+814 silly registry.get     'x-timer': 'S1412583338.135632,VS0,VE0',
+814 silly registry.get     vary: 'Accept',
+814 silly registry.get     'content-length': '0',
+814 silly registry.get     'keep-alive': 'timeout=10, max=50',
+814 silly registry.get     connection: 'Keep-Alive' } ]
+815 verbose etag https://registry.npmjs.org/isarray from cache
+816 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+817 silly lockFile 9efe11b1-isarray-0-0-1 isarray@0.0.1
+818 silly resolved [ { name: 'isarray',
+818 silly resolved     description: 'Array#isArray for older browsers',
+818 silly resolved     version: '0.0.1',
+818 silly resolved     repository:
+818 silly resolved      { type: 'git',
+818 silly resolved        url: 'git://github.com/juliangruber/isarray.git' },
+818 silly resolved     homepage: 'https://github.com/juliangruber/isarray',
+818 silly resolved     main: 'index.js',
+818 silly resolved     scripts: { test: 'tap test/*.js' },
+818 silly resolved     dependencies: {},
+818 silly resolved     devDependencies: { tap: '*' },
+818 silly resolved     keywords: [ 'browser', 'isarray', 'array' ],
+818 silly resolved     author:
+818 silly resolved      { name: 'Julian Gruber',
+818 silly resolved        email: 'mail@juliangruber.com',
+818 silly resolved        url: 'http://juliangruber.com' },
+818 silly resolved     license: 'MIT',
+818 silly resolved     readme: '\n# isarray\n\n`Array#isArray` for older browsers.\n\n## Usage\n\n```js\nvar isArray = require(\'isarray\');\n\nconsole.log(isArray([])); // => true\nconsole.log(isArray({})); // => false\n```\n\n## Installation\n\nWith [npm](http://npmjs.org) do\n\n```bash\n$ npm install isarray\n```\n\nThen bundle for the browser with\n[browserify](https://github.com/substack/browserify).\n\nWith [component](http://component.io) do\n\n```bash\n$ component install juliangruber/isarray\n```\n\n## License\n\n(MIT)\n\nCopyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the "Software"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\nof the Software, and to permit persons to whom the Software is furnished to do\nso, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n',
+818 silly resolved     readmeFilename: 'README.md',
+818 silly resolved     _id: 'isarray@0.0.1',
+818 silly resolved     dist:
+818 silly resolved      { shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+818 silly resolved        tarball: 'http://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz' },
+818 silly resolved     _from: 'isarray@0.0.1',
+818 silly resolved     _npmVersion: '1.2.18',
+818 silly resolved     _npmUser: { name: 'juliangruber', email: 'julian@juliangruber.com' },
+818 silly resolved     maintainers: [ [Object] ],
+818 silly resolved     directories: {},
+818 silly resolved     _shasum: '8a18acfca9a8f4177e09abfc6038939b05d1eedf',
+818 silly resolved     _resolved: 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz',
+818 silly resolved     bugs: { url: 'https://github.com/juliangruber/isarray/issues' } } ]
+819 info install isarray@0.0.1 into /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data
+820 info installOne isarray@0.0.1
+821 verbose node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray unbuild
+822 verbose tar unpack /home/taojx/.npm/isarray/0.0.1/package.tgz
+823 silly lockFile 82dc3b11-binary-data-node-modules-isarray tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray
+824 verbose lock tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray /home/taojx/.npm/82dc3b11-binary-data-node-modules-isarray.lock
+825 silly lockFile 67e6b834-jx-npm-isarray-0-0-1-package-tgz tar:///home/taojx/.npm/isarray/0.0.1/package.tgz
+826 verbose lock tar:///home/taojx/.npm/isarray/0.0.1/package.tgz /home/taojx/.npm/67e6b834-jx-npm-isarray-0-0-1-package-tgz.lock
+827 silly gunzTarPerm modes [ '775', '664' ]
+828 silly gunzTarPerm extractEntry package.json
+829 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+830 silly gunzTarPerm extractEntry README.md
+831 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+832 silly gunzTarPerm extractEntry index.js
+833 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+834 silly gunzTarPerm extractEntry build/build.js
+835 silly gunzTarPerm modified mode [ 'build/build.js', 420, 436 ]
+836 silly gunzTarPerm extractEntry component.json
+837 silly gunzTarPerm modified mode [ 'component.json', 420, 436 ]
+838 silly lockFile 82dc3b11-binary-data-node-modules-isarray tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray
+839 silly lockFile 82dc3b11-binary-data-node-modules-isarray tar:///home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray
+840 silly lockFile 67e6b834-jx-npm-isarray-0-0-1-package-tgz tar:///home/taojx/.npm/isarray/0.0.1/package.tgz
+841 silly lockFile 67e6b834-jx-npm-isarray-0-0-1-package-tgz tar:///home/taojx/.npm/isarray/0.0.1/package.tgz
+842 info preinstall isarray@0.0.1
+843 verbose readDependencies using package.json deps
+844 verbose readDependencies using package.json deps
+845 silly resolved []
+846 verbose about to build /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray
+847 info build /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray
+848 verbose linkStuff [ false,
+848 verbose linkStuff   false,
+848 verbose linkStuff   false,
+848 verbose linkStuff   '/home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data/node_modules' ]
+849 info linkStuff isarray@0.0.1
+850 verbose linkBins isarray@0.0.1
+851 verbose linkMans isarray@0.0.1
+852 verbose rebuildBundles isarray@0.0.1
+853 info install isarray@0.0.1
+854 info postinstall isarray@0.0.1
+855 verbose about to build /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data
+856 info build /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/has-binary-data
+857 verbose linkStuff [ false,
+857 verbose linkStuff   false,
+857 verbose linkStuff   false,
+857 verbose linkStuff   '/home/taojx/workspace/CCNote/node_modules/socket.io/node_modules' ]
+858 info linkStuff has-binary-data@0.1.3
+859 verbose linkBins has-binary-data@0.1.3
+860 verbose linkMans has-binary-data@0.1.3
+861 verbose rebuildBundles has-binary-data@0.1.3
+862 verbose rebuildBundles [ 'isarray' ]
+863 info install has-binary-data@0.1.3
+864 info postinstall has-binary-data@0.1.3
+865 http 200 https://registry.npmjs.org/base64id
+866 silly registry.get cb [ 200,
+866 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+866 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+866 silly registry.get     etag: '"DP4QPIWOJCITZO61QAHA4PNXJ"',
+866 silly registry.get     'content-type': 'application/json',
+866 silly registry.get     'cache-control': 'max-age=60',
+866 silly registry.get     'content-length': '1829',
+866 silly registry.get     'accept-ranges': 'bytes',
+866 silly registry.get     via: '1.1 varnish',
+866 silly registry.get     age: '199',
+866 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+866 silly registry.get     'x-cache': 'HIT',
+866 silly registry.get     'x-cache-hits': '1',
+866 silly registry.get     'x-timer': 'S1412583338.202428,VS0,VE124',
+866 silly registry.get     vary: 'Accept',
+866 silly registry.get     'keep-alive': 'timeout=10, max=49',
+866 silly registry.get     connection: 'Keep-Alive' } ]
+867 silly lockFile 25dd8f34--org-base64id-base64id-0-1-0-tgz https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz
+868 verbose lock https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz /home/taojx/.npm/25dd8f34--org-base64id-base64id-0-1-0-tgz.lock
+869 verbose addRemoteTarball [ 'https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz',
+869 verbose addRemoteTarball   '02ce0fdeee0cef4f40080e1e73e834f0b1bfce3f' ]
+870 info retry fetch attempt 1 at 16:15:38
+871 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/base64id/-/base64id-0.1.0.tgz
+872 http GET https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz
+873 http 200 https://registry.npmjs.org/engine.io-parser
+874 silly registry.get cb [ 200,
+874 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+874 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+874 silly registry.get     etag: '"6RBT18RXL8OHBVI8LXPR1CBOQ"',
+874 silly registry.get     'content-type': 'application/json',
+874 silly registry.get     'cache-control': 'max-age=60',
+874 silly registry.get     'content-length': '16015',
+874 silly registry.get     'accept-ranges': 'bytes',
+874 silly registry.get     via: '1.1 varnish',
+874 silly registry.get     age: '2129',
+874 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+874 silly registry.get     'x-cache': 'HIT',
+874 silly registry.get     'x-cache-hits': '1',
+874 silly registry.get     'x-timer': 'S1412583338.186075,VS0,VE189',
+874 silly registry.get     vary: 'Accept',
+874 silly registry.get     'keep-alive': 'timeout=10, max=49',
+874 silly registry.get     connection: 'Keep-Alive' } ]
+875 silly lockFile 949321c4-arser-engine-io-parser-1-1-0-tgz https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-1.1.0.tgz
+876 verbose lock https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-1.1.0.tgz /home/taojx/.npm/949321c4-arser-engine-io-parser-1-1-0-tgz.lock
+877 verbose addRemoteTarball [ 'https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-1.1.0.tgz',
+877 verbose addRemoteTarball   '39a2f7b1e8998fa1245fbc91e13504b8c92f3755' ]
+878 info retry fetch attempt 1 at 16:15:38
+879 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/engine.io-parser/-/engine.io-parser-1.1.0.tgz
+880 http GET https://registry.npmjs.org/engine.io-parser/-/engine.io-parser-1.1.0.tgz
+881 http 200 https://registry.npmjs.org/debug
+882 silly registry.get cb [ 200,
+882 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+882 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+882 silly registry.get     etag: '"EWQK2OLCUA4CKMN5129HSUFY1"',
+882 silly registry.get     'content-type': 'application/json',
+882 silly registry.get     'cache-control': 'max-age=60',
+882 silly registry.get     'content-length': '26783',
+882 silly registry.get     'accept-ranges': 'bytes',
+882 silly registry.get     via: '1.1 varnish',
+882 silly registry.get     age: '427',
+882 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+882 silly registry.get     'x-cache': 'HIT',
+882 silly registry.get     'x-cache-hits': '10',
+882 silly registry.get     'x-timer': 'S1412583338.269697,VS0,VE0',
+882 silly registry.get     vary: 'Accept',
+882 silly registry.get     'keep-alive': 'timeout=10, max=49',
+882 silly registry.get     connection: 'Keep-Alive' } ]
+883 silly lockFile 7f8b8e49--npmjs-org-debug-debug-1-0-3-tgz https://registry.npmjs.org/debug/-/debug-1.0.3.tgz
+884 verbose lock https://registry.npmjs.org/debug/-/debug-1.0.3.tgz /home/taojx/.npm/7f8b8e49--npmjs-org-debug-debug-1-0-3-tgz.lock
+885 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-1.0.3.tgz',
+885 verbose addRemoteTarball   'fc8c6b2d6002804b4081c0208e0f6460ba1fa3e4' ]
+886 info retry fetch attempt 1 at 16:15:38
+887 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/debug/-/debug-1.0.3.tgz
+888 http GET https://registry.npmjs.org/debug/-/debug-1.0.3.tgz
+889 http 200 https://registry.npmjs.org/object-component
+890 silly registry.get cb [ 200,
+890 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+890 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+890 silly registry.get     etag: '"B1JDUDQA9B8LCKACK9EGLP7IX"',
+890 silly registry.get     'content-type': 'application/json',
+890 silly registry.get     'cache-control': 'max-age=60',
+890 silly registry.get     'content-length': '4213',
+890 silly registry.get     'accept-ranges': 'bytes',
+890 silly registry.get     via: '1.1 varnish',
+890 silly registry.get     age: '485',
+890 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+890 silly registry.get     'x-cache': 'HIT',
+890 silly registry.get     'x-cache-hits': '1',
+890 silly registry.get     'x-timer': 'S1412583338.483837,VS0,VE177',
+890 silly registry.get     vary: 'Accept',
+890 silly registry.get     'keep-alive': 'timeout=10, max=48',
+890 silly registry.get     connection: 'Keep-Alive' } ]
+891 silly lockFile 5a393152-onent-object-component-0-0-3-tgz https://registry.npmjs.org/object-component/-/object-component-0.0.3.tgz
+892 verbose lock https://registry.npmjs.org/object-component/-/object-component-0.0.3.tgz /home/taojx/.npm/5a393152-onent-object-component-0-0-3-tgz.lock
+893 verbose addRemoteTarball [ 'https://registry.npmjs.org/object-component/-/object-component-0.0.3.tgz',
+893 verbose addRemoteTarball   'f0c69aa50efc95b866c186f400a33769cb2f1291' ]
+894 info retry fetch attempt 1 at 16:15:38
+895 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/object-component/-/object-component-0.0.3.tgz
+896 http GET https://registry.npmjs.org/object-component/-/object-component-0.0.3.tgz
+897 http 200 https://registry.npmjs.org/json3/-/json3-3.2.6.tgz
+898 http 200 https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz
+899 http 200 https://registry.npmjs.org/has-binary
+900 silly registry.get cb [ 200,
+900 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+900 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+900 silly registry.get     etag: '"IWCZQZUI5YSSSPOCSUUWG6TY"',
+900 silly registry.get     'content-type': 'application/json',
+900 silly registry.get     'cache-control': 'max-age=60',
+900 silly registry.get     'content-length': '1398',
+900 silly registry.get     'accept-ranges': 'bytes',
+900 silly registry.get     via: '1.1 varnish',
+900 silly registry.get     age: '199',
+900 silly registry.get     'x-served-by': 'cache-ty68-TYO',
+900 silly registry.get     'x-cache': 'HIT',
+900 silly registry.get     'x-cache-hits': '1',
+900 silly registry.get     'x-timer': 'S1412583338.542380,VS0,VE188',
+900 silly registry.get     vary: 'Accept',
+900 silly registry.get     'keep-alive': 'timeout=10, max=48',
+900 silly registry.get     connection: 'Keep-Alive' } ]
+901 silly lockFile c42b183a--has-binary-has-binary-0-1-5-tgz https://registry.npmjs.org/has-binary/-/has-binary-0.1.5.tgz
+902 verbose lock https://registry.npmjs.org/has-binary/-/has-binary-0.1.5.tgz /home/taojx/.npm/c42b183a--has-binary-has-binary-0-1-5-tgz.lock
+903 verbose addRemoteTarball [ 'https://registry.npmjs.org/has-binary/-/has-binary-0.1.5.tgz',
+903 verbose addRemoteTarball   '95e75720ff31b72a3ba89a5b6dce082e4bc6467f' ]
+904 info retry fetch attempt 1 at 16:15:38
+905 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/has-binary/-/has-binary-0.1.5.tgz
+906 http GET https://registry.npmjs.org/has-binary/-/has-binary-0.1.5.tgz
+907 http 200 https://registry.npmjs.org/indexof
+908 silly registry.get cb [ 200,
+908 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:38 GMT',
+908 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+908 silly registry.get     etag: '"7SGR69GCYSGN77UZYOQP7XKUB"',
+908 silly registry.get     'content-type': 'application/json',
+908 silly registry.get     'cache-control': 'max-age=60',
+908 silly registry.get     'content-length': '1233',
+908 silly registry.get     'accept-ranges': 'bytes',
+908 silly registry.get     via: '1.1 varnish',
+908 silly registry.get     age: '399',
+908 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+908 silly registry.get     'x-cache': 'HIT',
+908 silly registry.get     'x-cache-hits': '2',
+908 silly registry.get     'x-timer': 'S1412583338.961268,VS0,VE0',
+908 silly registry.get     vary: 'Accept',
+908 silly registry.get     'keep-alive': 'timeout=10, max=48',
+908 silly registry.get     connection: 'Keep-Alive' } ]
+909 silly lockFile 328b1f08-js-org-indexof-indexof-0-0-1-tgz https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz
+910 verbose lock https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz /home/taojx/.npm/328b1f08-js-org-indexof-indexof-0-0-1-tgz.lock
+911 verbose addRemoteTarball [ 'https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz',
+911 verbose addRemoteTarball   '82dc336d232b9062179d05ab3293a66059fd435d' ]
+912 info retry fetch attempt 1 at 16:15:39
+913 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/indexof/-/indexof-0.0.1.tgz
+914 http GET https://registry.npmjs.org/indexof/-/indexof-0.0.1.tgz
+915 http 200 https://registry.npmjs.org/parseuri
+916 silly registry.get cb [ 200,
+916 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:39 GMT',
+916 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+916 silly registry.get     etag: '"17DZ66FDS4FZLTRNX2WA22KQR"',
+916 silly registry.get     'content-type': 'application/json',
+916 silly registry.get     'cache-control': 'max-age=60',
+916 silly registry.get     'content-length': '3512',
+916 silly registry.get     'accept-ranges': 'bytes',
+916 silly registry.get     via: '1.1 varnish',
+916 silly registry.get     age: '738',
+916 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+916 silly registry.get     'x-cache': 'HIT',
+916 silly registry.get     'x-cache-hits': '1',
+916 silly registry.get     'x-timer': 'S1412583338.834447,VS0,VE179',
+916 silly registry.get     vary: 'Accept',
+916 silly registry.get     'keep-alive': 'timeout=10, max=47',
+916 silly registry.get     connection: 'Keep-Alive' } ]
+917 silly lockFile 90bef67e--org-parseuri-parseuri-0-0-2-tgz https://registry.npmjs.org/parseuri/-/parseuri-0.0.2.tgz
+918 verbose lock https://registry.npmjs.org/parseuri/-/parseuri-0.0.2.tgz /home/taojx/.npm/90bef67e--org-parseuri-parseuri-0-0-2-tgz.lock
+919 verbose addRemoteTarball [ 'https://registry.npmjs.org/parseuri/-/parseuri-0.0.2.tgz',
+919 verbose addRemoteTarball   'db41878f2d6964718be870b3140973d8093be156' ]
+920 info retry fetch attempt 1 at 16:15:39
+921 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/parseuri/-/parseuri-0.0.2.tgz
+922 http GET https://registry.npmjs.org/parseuri/-/parseuri-0.0.2.tgz
+923 silly lockFile ab66987f--npmjs-org-json3-json3-3-2-6-tgz https://registry.npmjs.org/json3/-/json3-3.2.6.tgz
+924 silly lockFile ab66987f--npmjs-org-json3-json3-3-2-6-tgz https://registry.npmjs.org/json3/-/json3-3.2.6.tgz
+925 silly lockFile 9a8c1b76-json3-3-2-6 json3@3.2.6
+926 silly lockFile 9a8c1b76-json3-3-2-6 json3@3.2.6
+927 silly lockFile 8c79fb7a-rg-benchmark-benchmark-1-0-0-tgz https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz
+928 silly lockFile 8c79fb7a-rg-benchmark-benchmark-1-0-0-tgz https://registry.npmjs.org/benchmark/-/benchmark-1.0.0.tgz
+929 silly lockFile 896a6c2d-benchmark-1-0-0 benchmark@1.0.0
+930 silly lockFile 896a6c2d-benchmark-1-0-0 benchmark@1.0.0
+931 http 200 https://registry.npmjs.org/component-bind
+932 silly registry.get cb [ 200,
+932 silly registry.get   { date: 'Mon, 06 Oct 2014 08:15:39 GMT',
+932 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+932 silly registry.get     etag: '"7WILP0K8WVXQOIEFEHN1RS9GO"',
+932 silly registry.get     'content-type': 'application/json',
+932 silly registry.get     'cache-control': 'max-age=60',
+932 silly registry.get     'content-length': '4097',
+932 silly registry.get     'accept-ranges': 'bytes',
+932 silly registry.get     via: '1.1 varnish',
+932 silly registry.get     age: '269',
+932 silly registry.get     'x-served-by': 'cache-ty67-TYO',
+932 silly registry.get     'x-cache': 'HIT',
+932 silly registry.get     'x-cache-hits': '1',
+932 silly registry.get     'x-timer': 'S1412583339.187962,VS0,VE113',
+932 silly registry.get     vary: 'Accept',
+932 silly registry.get     'keep-alive': 'timeout=10, max=46',
+932 silly registry.get     connection: 'Keep-Alive' } ]
+933 silly lockFile df860aea-nt-bind-component-bind-1-0-0-tgz https://registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz
+934 verbose lock https://registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz /home/taojx/.npm/df860aea-nt-bind-component-bind-1-0-0-tgz.lock
+935 http 200 https://registry.npmjs.org/debug/-/debug-1.0.3.tgz
+936 verbose addRemoteTarball [ 'https://registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz',
+936 verbose addRemoteTarball   '00c608ab7dcd93897c0009651b1d3a8e1e73bbd1' ]
+937 info retry fetch attempt 1 at 16:15:39
+938 verbose fetch to= /tmp/npm-16623-j4Qtiy00/registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz
+939 http GET https://registry.npmjs.org/component-bind/-/component-bind-1.0.0.tgz
+940 silly lockFile 7f8b8e49--npmjs-org-debug-debug-1-0-3-tgz https://registry.npmjs.org/debug/-/debug-1.0.3.tgz
+941 silly lockFile 7f8b8e49--npmjs-org-debug-debug-1-0-3-tgz https://registry.npmjs.org/debug/-/debug-1.0.3.tgz
+942 silly lockFile 9e0d2b30-debug-1-0-3 debug@1.0.3
+943 silly lockFile 9e0d2b30-debug-1-0-3 debug@1.0.3
+944 verbose about to build /home/taojx/workspace/CCNote/node_modules/socket.io/node_modules/engine.io
+945 verbose node_modules/socket.io/node_modules/engine.io unbuild
+946 info preuninstall engine.io@1.4.0
+947 info uninstall engine.io@1.4.0
+948 verbose false,/home/taojx/workspace/CCNote/node_modules,/home/taojx/workspace/CCNote/node_modules/socket.io/node_modules unbuild engine.io@1.4.0
+949 info postuninstall engine.io@1.4.0
+950 verbose about to build /home/taojx/workspace/CCNote/node_modules/socket.io
+951 verbose node_modules/socket.io unbuild
+952 info preuninstall socket.io@1.1.0
+953 info uninstall socket.io@1.1.0
+954 verbose true,/home/taojx/workspace/CCNote/node_modules,/home/taojx/workspace/CCNote/node_modules unbuild socket.io@1.1.0
+955 info postuninstall socket.io@1.1.0
+956 error Error: EACCES, mkdir '/home/taojx/.npm/debug/1.0.3'
+956 error  { [Error: EACCES, mkdir '/home/taojx/.npm/debug/1.0.3']
+956 error   errno: 3,
+956 error   code: 'EACCES',
+956 error   path: '/home/taojx/.npm/debug/1.0.3',
+956 error   parent: 'engine.io' }
+957 error Please try running this command again as root/Administrator.
+958 error System Linux 3.13.0-36-generic
+959 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "socket.io"
+960 error cwd /home/taojx/workspace/CCNote
+961 error node -v v0.10.31
+962 error npm -v 1.4.23
+963 error path /home/taojx/.npm/debug/1.0.3
+964 error code EACCES
+965 error errno 3
+966 error stack Error: EACCES, mkdir '/home/taojx/.npm/debug/1.0.3'
+967 verbose exit [ 3, true ]

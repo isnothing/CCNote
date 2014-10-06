@@ -1,4 +1,4 @@
-body {font-family: "Lato", Helvetica, Arial, sans-serif;font-size: 18px;line-height: 1.72222;color: #34495e;background-color: #ffffff;}
+body {margin: 0px; font-family: "Lato", Helvetica, Arial, sans-serif;font-size: 18px;line-height: 1.72222;color: #34495e;background-color: #ffffff;}
 a {color: #16a085;text-decoration: none;-webkit-transition: 0.25s;transition: 0.25s;}
 a:hover,
 a:focus {color: #1abc9c;text-decoration: none;}
@@ -13,14 +13,70 @@ a:focus {outline: none;}
 .form-control {border: 2px solid #bdc3c7;color: #34495e;font-family: "Lato", Helvetica, Arial, sans-serif;font-size: 15px;line-height: 1.467;padding: 4px 12px; margin: 10px; height: 20px;-webkit-appearance: none;border-radius: 6px;-webkit-box-shadow: none;box-shadow: none;-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;transition: border .25s linear, color .25s linear, background-color .25s linear;}
 .form-group.focus .form-control,
 .form-control:focus {border-color: #1abc9c;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
+
+#head {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 180px;
+    height: 800px;
+    background-color: #F6F6F6;
+    float: left;
+    padding-left: 20px;
+}
+
+.head-li {
+    margin-top: 10px;
+}
+
+#body {
+    margin-left: 200px;
+}
+
 #main {
 	position: relative;
 	left: 400px;
 	top: 20px;
 }
-.note-item {
-	margin: 10px;
+
+#content {
+    margin-left: 240px;
 }
+
+.note-list {
+    border: 1px solid #F0F0F0;
+    width: 240px;
+    height: 787px;
+    float: left;
+    overflow: auto;
+}
+.note-list hr {
+    width: 80%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255,255,0,0,1);
+    border-bottom: 1px solid rgba(0,0,255,0.3);
+}
+.note-item {
+    margin-left: 20px;
+}
+
+.note-content {
+}
+
+#note-title {
+    width: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.note-editor {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 1080px;
+    height: 640px;
+}
+
 .login-form {
     position: relative;
     top: 160px;

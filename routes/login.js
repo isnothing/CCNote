@@ -5,6 +5,7 @@ var router = express.Router();
 /*Login*/
 router.get('/login', function(req, res) {
     if (dao.query(req.name) == req.password) {
+        console.log("login successful");
         res.render("successful!");
     } else {
         res.render("error!");

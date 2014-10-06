@@ -11,7 +11,9 @@ router.post('/list', function(req, res) {
     userDao.getPassword(name, function(password) {
         if (password == passwordToCheck) {
             console.log('login successful.');
+            passwordToCheck = null;
         } else {
+            passwordToCheck = null;
             res.redirect('/login');
             return;
         }
