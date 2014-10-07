@@ -36,7 +36,7 @@ router.post('/list', function(req, res) {
     
 });
 
-router.get('/list', function(req, res) {
+/*router.get('/list', function(req, res) {
     //Show note list
     dao.show(function(notelist) {
     console.log('notelist ' + notelist);
@@ -52,9 +52,9 @@ router.get('/list', function(req, res) {
     res.render('list', { notes: noteArr});
     });
     
-});
+});*/
 
-/*Login*/
+/*Login by Get*/
 router.get('/login', function(req, res) {
     res.render('login', {
         title: 'welcome to ccnote'});
@@ -67,7 +67,6 @@ router.get('/show', function(req, res) {
 
 /* Create a note. */
 router.get('/create', function(req, res) {
-    dao.create('first', 'info');
     res.render('index', {title: 'Create' });
 });
 
