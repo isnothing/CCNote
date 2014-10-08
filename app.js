@@ -5,13 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var dao = require('./daos/note_dao');
+var handler = require('./models/RequestHandler');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
 var server = require('http').createServer(app);
+var io = require('socket.io').listen(server);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -56,6 +57,56 @@ app.use(function(err, req, res, next) {
         message: err.message,
         error: {}
     });
+});
+
+io.on('connection', function(socket) {
+
+    socket.emit('result', {hello: 'world'});
+
+    socket.on('add', function(data) {
+        console.log('add note ' + data.title);
+        handler.handleAdd(data, function(success) {
+           if (success == 0) {
+               socket.emit('add-finished', {result: 'success'});
+           } else {
+               socket.emit('add-finished',{});
+           }
+        });
+    });
+
+    socket.on('update',function(data) {
+        console.log('update note');
+        handler.handleUpdate(data, function(success) { 
+           if (success == 0) {
+               socket.emit('update-finished', {result: 'success'});
+           } else {
+               socket.emit('update-finished',{result: 'fail'});
+           }
+        });
+    });
+
+    socket.on('delete',function(data) {
+        console.log('delete note');
+        handler.handleDelete(data, function(success) { 
+           if (success == 0) {
+               socket.emit('delete-successful', {});
+           } else {
+               socket.emit('delete-failed',{});
+           }
+        });
+    });
+
+    socket.on('show', function(data) {
+        console.log('showw note');
+        handler.handleShow(data, function(success) { 
+           if (success == 0) {
+               socket.emit('show-successful', {});
+           } else {
+               socket.emit('show-failed',{});
+           }
+        });
+    });
+
 });
 
 server.listen(3000);

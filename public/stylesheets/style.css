@@ -40,18 +40,20 @@ a:focus {outline: none;}
 }
 
 #content {
+    position: relative;
     margin-left: 240px;
 }
 
 .note-list {
+    position: relative;
     border: 1px solid #F0F0F0;
-    width: 240px;
+    width: 320px;
     height: 787px;
     float: left;
     overflow: auto;
 }
 .note-list hr {
-    width: 80%;
+    width: 96%;
     border: 0;
     height: 0;
     border-top: 1px solid rgba(255,255,0,0,1);
@@ -73,7 +75,7 @@ a:focus {outline: none;}
 .note-editor {
     margin-top: 10px;
     margin-left: 20px;
-    width: 1080px;
+    width: 980px;
     height: 640px;
 }
 
@@ -86,7 +88,7 @@ a:focus {outline: none;}
 }
 .login-item {
     position: relative;
-    top: -20px;
+    top: -15px;
     left: 10px;
     margin-right: 20px;
     float: left;

@@ -21,14 +21,20 @@ router.post('/list', function(req, res) {
     
     //Show note list
     dao.show(function(notelist) {
-    console.log('notelist ' + notelist);
+    //console.log('notelist ' + notelist);
 
     var noteArr = [];
     for (var i=0; i < notelist.length; i++) {
-    	var note = {name: '', content: ''};
-    	note.name = notelist[i].name;
+    	var note = {id:'', title: '', content: ''};
+        note.id = notelist[i].nid;
+        //console.log('nid' + note.id);
+    	note.title = notelist[i].name;
     	note.content = notelist[i].content;
     	noteArr.push(note);
+        
+        if (note.content.length > 80) {
+            note.content = note.content.substr(0,80) + "...";
+        }
     }
     
     res.render('list', { notes: noteArr});
@@ -36,23 +42,28 @@ router.post('/list', function(req, res) {
     
 });
 
-/*router.get('/list', function(req, res) {
+router.get('/list', function(req, res) {
     //Show note list
     dao.show(function(notelist) {
-    console.log('notelist ' + notelist);
+    console.log('note ' + notelist);
 
     var noteArr = [];
     for (var i=0; i < notelist.length; i++) {
-    	var note = {name: '', content: ''};
+    	var note = {id:'', name: '', content: ''};
+        note.id = notelist[i].nid;
     	note.name = notelist[i].name;
     	note.content = notelist[i].content;
+
+        if (note.content.length > 80) {
+            note.content = note.content.substr(0,80) + "...";
+        }
     	noteArr.push(note);
     }
     
     res.render('list', { notes: noteArr});
     });
-    
-});*/
+    //res.redirect('/login');
+});
 
 /*Login by Get*/
 router.get('/login', function(req, res) {

@@ -1,8 +1,7 @@
 <div class="note-content">
-    <input id="note-title" class="form-control input-sm" type="text" name="user[name]" value="Title"></input>
-    <input id="save" type="button" class="btn btn-embossed btn-primary" value="save"></input>
-    <input id="delete" type="button" class="btn btn-embossed btn-primary" value="delete"></input>
-    <textarea class="note-editor form-control input-sm">
-        This is the first note that I make.
-    </textarea>
+    <input id="note-id" type="hidden" value=-1></input>
+    <input id="note-title" class="form-control input-sm" type="text" placeholder="标题"></input>
+    <input id="save" type="button" class="btn btn-embossed btn-primary" value="保存"></input>
+    <input id="delete" type="button" class="btn btn-embossed btn-primary" value="删除"></input>
+    <textarea id="note-content" class="note-editor form-control input-sm"></textarea>
 </div>

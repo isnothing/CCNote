@@ -3,43 +3,23 @@
   <head>
    <title>ccnote</title>
    <link rel='stylesheet' href='/stylesheets/style.css' />
+   <script type='text/javascript' src='javascripts/jequery.min.js'></script>
    <script src='/socket.io/socket.io.js'></script>
    <script src='javascripts/note.js'></script>
-   <script type='text/javascript' src='javascripts/jequery.min.js'></script>
-   <script type='text/javascript'>
-    $(document).ready(function() {
-    var swi = 0;
-    $("#noteSwitch").click(function() {
-        if (swi == 0) {
-            $(".note-list").hide();
-            swi = 1;
-        } else {
-            $(".note-list").show();
-            swi = 0;
-        }
-    });
-    $("#new-button").click(function() {
-
-        });
-    $("#settings-button").click(function() {
-
-        });
-    });
-    </script>
   </head>
   <body>
   <div id="head">
     <h1>CCNote</h1>
     <ul>
-        <li class="head-li"><button id="new-button" class="btn btn-embossed btn-primary">New Note</button></li>
-        <li class="head-li"><button id="noteSwitch" class="btn btn-embossed btn-primary">Note List</button></li>
-        <li class="head-li"><button id="settings-button" class="btn btn-embossed btn-primary">Settings</button></li>
+        <li class="head-li"><button id="new-button" class="btn btn-embossed btn-primary">新建</button></li>
+        <li class="head-li"><button id="list-button" class="btn btn-embossed btn-primary">列表</button></li>
+        <li class="head-li"><button id="settings-button" class="btn btn-embossed btn-primary">设置</button></li>
     </ul>
   </div>
 
   <div id="body">
       <div class='note-list'>
-      <h2 class="note-item">Note List</h2>
+      <h2 class="note-item">笔记列表</h2>
      <% notes.forEach(function(note){ %>
      <% include note_item %>
      <hr>
