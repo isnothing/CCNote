@@ -51,7 +51,7 @@ router.get('/list', function(req, res) {
     for (var i=0; i < notelist.length; i++) {
     	var note = {id:'', name: '', content: ''};
         note.id = notelist[i].nid;
-    	note.name = notelist[i].name;
+    	note.title = notelist[i].name;
     	note.content = notelist[i].content;
 
         if (note.content.length > 80) {
