@@ -1,6 +1,9 @@
 /* Define a socket communicating with server. */
 var socket = io('http://localhost:3000');
 
+var editor = new Editor();
+editor.render();
+
 /* The basic CRUD option of the note. */
 var addNote = function (title, content) {
     if (title == null || title.length == 0) {
