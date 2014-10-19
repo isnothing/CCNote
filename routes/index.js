@@ -32,7 +32,7 @@ router.post('/list', function(req, res) {
     	note.content = notelist[i].content;
     	noteArr.push(note);
         
-        if (note.content.length > 80) {
+        if (note.content != null && note.content.length > 80) {
             note.content = note.content.substr(0,80) + "...";
         }
     }

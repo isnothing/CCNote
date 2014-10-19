@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
    <title>ccnote</title>
    <link rel='stylesheet' href='/stylesheets/style.css' />
+   <link rel="stylesheet" href='/stylesheets/editor.css' />
    <script type='text/javascript' src='javascripts/jequery.min.js'></script>
+   <script type="text/javascript" src="javascripts/editor.js"></script>
+   <script type="text/javascript" src="javascripts/marked.js"></script>
    <script src='/socket.io/socket.io.js'></script>
   </head>
   <body>
@@ -28,8 +31,5 @@
       <div id="content"><% include note_content %></div>
   </div>
   </body>
-   <link rel="stylesheet" href="http://lab.lepture.com/editor/editor.css" />
-   <script type="text/javascript" src="http://lab.lepture.com/editor/editor.js"></script>
-   <script type="text/javascript" src="http://lab.lepture.com/editor/marked.js"></script>
    <script src='javascripts/note.js'></script>
 </html>
