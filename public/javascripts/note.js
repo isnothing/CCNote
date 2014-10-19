@@ -78,7 +78,8 @@ $(document).ready(function() {
     $("#save").click(function() {
         var nid = $("#note-id").val();
         var title = $("#note-title").val();
-        var content = $("#note-content").val();
+        //var content = $("#note-content").val();
+        var content = editor.codemirror.getValue();
         console.log(nid + title + content);
         if (nid == -1) {
             addNote(title, content);
