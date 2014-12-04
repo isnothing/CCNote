@@ -97,13 +97,11 @@ io.on('connection', function(socket) {
     });
 
     socket.on('show', function(data) {
-        console.log('showw note');
-        handler.handleShow(data, function(success) { 
-           if (success == 0) {
-               socket.emit('show-successful', {});
-           } else {
-               socket.emit('show-failed',{});
-           }
+        var note = {nid:data.nid, name: '', content: ''};
+        console.log("receive : " + note.nid);
+        handler.handleShow(note, function(note) { 
+          console.log("emit"+note.nid);
+            socket.emit('show-successful', {"note": note});
         });
     });
 

@@ -50,6 +50,16 @@ var dao = {
                 callback(rows);
             }
         });
+    },
+    findByNid : function(note, callback) {
+        var showSql = 'select nid, name, content from note where nid = ?';
+        connection.query(showSql, [note.nid], function(err, rows, fields) {
+            if (err != null) {
+                console.log('error! please try again.');
+            } else {
+                callback(rows);
+            }
+        });
     }
 }
 

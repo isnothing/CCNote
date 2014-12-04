@@ -18,7 +18,10 @@ var Handler = {
 
     },
     handleShow: function(note, callback) {
-
+      noteDao.findByNid(note, function(data) {
+        var note = {nid:data[0].nid, title:data[0].name, content:data[0].content};
+        callback(note);
+      });
     }
 };
 

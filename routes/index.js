@@ -1,6 +1,6 @@
 var express = require('express');
 var dao = require('../daos/note_dao.js');
-var userDao = require('../daos/userDao.js');
+var userDao = require('../daos/user_dao.js');
 var router = express.Router();
 
 /*Note list*/
@@ -18,11 +18,9 @@ router.post('/list', function(req, res) {
             return;
         }
     });
-    
     //Show note list
     dao.show(function(notelist) {
     //console.log('notelist ' + notelist);
-
     var noteArr = [];
     for (var i=0; i < notelist.length; i++) {
     	var note = {id:'', title: '', content: ''};
@@ -31,12 +29,10 @@ router.post('/list', function(req, res) {
     	note.title = notelist[i].name;
     	note.content = notelist[i].content;
     	noteArr.push(note);
-        
         if (note.content != null && note.content.length > 80) {
             note.content = note.content.substr(0,80) + "...";
         }
     }
-    
     res.render('list', { notes: noteArr});
     });
     
@@ -46,7 +42,6 @@ router.get('/list', function(req, res) {
     //Show note list
     dao.show(function(notelist) {
     console.log('note ' + notelist);
-
     var noteArr = [];
     for (var i=0; i < notelist.length; i++) {
     	var note = {id:'', name: '', content: ''};
@@ -59,7 +54,6 @@ router.get('/list', function(req, res) {
         }
     	noteArr.push(note);
     }
-    
     res.render('list', { notes: noteArr});
     });
     //res.redirect('/login');
@@ -73,7 +67,11 @@ router.get('/login', function(req, res) {
 
 /* GET home page. */
 router.get('/show', function(req, res) {
-    res.render('index', { title: 'show' });
+    var nid = req.query.nid;
+    console.log(req.query.nid);
+    // dao.update(nid);
+    var note = {id:'122', name: 'test', content: 'test'};
+    res.render('index', { "note": note });
 });
 
 /* Create a note. */

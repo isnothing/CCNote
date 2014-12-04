@@ -1,5 +1,5 @@
 var express = require('express');
-var dao = require('../daos/userDao.js');
+var dao = require('../daos/user_dao.js');
 var router = express.Router();
 
 /*Login*/

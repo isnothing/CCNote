@@ -28,8 +28,12 @@ var updateNote = function (nid, title, content) {
 
 var showNote = function (nid) {
     socket.emit('show',{'nid': nid});
-    socket.on('note-detail', function (data) {
-        console.log(data);
+    socket.on('show-successful', function (data) {
+        var note = data.note;
+        console.log(note.nid + note.title + note.content);
+        $("#note-id").val(note.nid);
+        $("#note-title").val(note.title);
+        editor.codemirror.setValue(note.content);
     });
 }
 
@@ -62,7 +66,7 @@ $(document).ready(function() {
         $("#content").css('opacity', '1');
         $("#note-id").val(-1);
         $("#note-title").val('');
-        $("#note-content").val('');
+        editor.codemirror.setValue('');
     });
 
     $("#settings-button").click(function() {
@@ -87,6 +91,7 @@ $(document).ready(function() {
         } else {
             updateNote(nid, title, content);
         }
+        window.location.reload();
     });
     
     $("#delete").click(function() {
