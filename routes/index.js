@@ -68,6 +68,34 @@ router.get('/login', function(req, res) {
         title: 'welcome to ccnote'});
 });
 
+router.get('/', function(req, res) {
+    res.render('login', {
+        title: 'welcome to ccnote'});
+});
+
+/*Register by Get*/
+router.get('/register', function(req, res) {
+    res.render('register', {
+        title: 'welcome to ccnote'});
+});
+
+/*Register by POST*/
+router.post('/register', function(req, res) {
+    var username = req.body.user.name;
+    var password1 =  req.body.user.password;
+    var password2 =  req.body.user.password1;
+    if (password1 != password2 || username == null || username == '') {
+        res.render('register', {
+            title: 'welcome to ccnote'});
+    } else {
+        userDao.create(req.body.user, function() {
+            res.render('login', {
+                title: 'welcome to ccnote'});
+        });
+    }
+});
+
+
 router.get('/logout', function(req, res) {
     req.session.username = null;
     res.redirect("/login");

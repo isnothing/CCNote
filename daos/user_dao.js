@@ -9,13 +9,17 @@ var connection = mysql.createConnection({
 });
 
 var dao = {
-    create : function(noteName, content) {
-        var createSql = 'insert into note(name, content) values(?, ?)';
-        connection.query(createSql, ['noteI','content'],function(err, rows, fields){
+    create : function(user, callback) {
+        var name = user.name;
+        var password = user.password;
+        console.log("create user=>" + name + " " + password);
+        var createSql = 'insert into user(name, password) values(?, ?)';
+        connection.query(createSql, [name,password],function(err, rows, fields){
             if (err != null) {
                 console.log('error! please try again.');
             } else {
                 console.log('create successful');
+                callback();
             }
         });
     },

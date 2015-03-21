@@ -10,7 +10,7 @@
   </head>
   <body>
   		<div id="main">
-      <form class="login-form" method="post" action="/list">
+      <form class="login-form" method="post" action="/register">
           <div> 
               <div class="login-item">
                   <h3>名称:</h3>
@@ -23,9 +23,13 @@
                   <h3>密码:</h3>
                   </div> 
               <div><input class="form-control input-sm" type="password" name="user[password]"></input></div>
+              <br>
+              <div class="register-item">
+                  <h3>确认密码:</h3>
+                  </div> 
+              <div><input class="form-control input-sm" type="password" name="user[password1]"></input></div>
           </div>
-        <input id="login-btn" class="btn btn-embossed btn-primary" type="submit" value="登录">
-        <input id="login-btn" class="btn btn-embossed btn-primary" type="button" onclick="location.href='/register'" value="注册">
+        <input id="register-btn" class="btn btn-embossed btn-primary" type="submit" value="注册">
       </div>
   </body>
 </html>
