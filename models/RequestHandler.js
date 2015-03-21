@@ -12,10 +12,23 @@ var Handler = {
         });
     },
     handleUpdate: function(note, callback) {
-
+        console.log('handle update=>' + note.content); 
+        noteDao.update(note, function(err) {
+              if (err == null) {
+                  callback(0);
+              } else {
+                  callback(1);
+              }
+        });
     },
-    handleDelete: function(note, callback) {
-
+    handleDelete: function(nid, callback) {
+        noteDao.remove(nid, function(err) {
+              if (err == null) {
+                  callback(0);
+              } else {
+                  callback(1);
+              }
+        });
     },
     handleShow: function(note, callback) {
       noteDao.findByNid(note, function(data) {

@@ -5,11 +5,11 @@ var editor = new Editor();
 editor.render();
 
 /* The basic CRUD option of the note. */
-var addNote = function (title, content) {
+var addNote = function (username, title, content) {
     if (title == null || title.length == 0) {
         return;
     }
-    socket.emit('add', {'title': title, 'content': content});
+    socket.emit('add', {'username' : username, 'title': title, 'content': content});
     socket.on('add-finished', function (data) {
         console.log(data);
         if (data.result == 'success') {
@@ -20,6 +20,10 @@ var addNote = function (title, content) {
 
 var deleteNote = function (nid) {
     socket.emit('delete', {'nid': nid});
+    socket.on('delete-successful', function (data) {
+        alert("删除成功!");
+        window.location.reload();
+    });
 }
 
 var updateNote = function (nid, title, content) {
@@ -69,7 +73,7 @@ $(document).ready(function() {
         editor.codemirror.setValue('');
     });
 
-    $("#settings-button").click(function() {
+    $("#logout-button").click(function() {
 
     });
 
@@ -80,13 +84,14 @@ $(document).ready(function() {
     });
 
     $("#save").click(function() {
+        var username = $("#username").val();
         var nid = $("#note-id").val();
         var title = $("#note-title").val();
         //var content = $("#note-content").val();
         var content = editor.codemirror.getValue();
         console.log(nid + title + content);
         if (nid == -1) {
-            addNote(title, content);
+            addNote(username, title, content);
             $("#note-id").val(0);
         } else {
             updateNote(nid, title, content);
@@ -95,6 +100,9 @@ $(document).ready(function() {
     });
     
     $("#delete").click(function() {
-
+        var nid = $("#note-id").val();
+        if (confirm("确定删除该笔记吗?")) {
+            deleteNote(nid);
+        }
     });
 });

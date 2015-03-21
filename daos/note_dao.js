@@ -10,9 +10,10 @@ var dao = {
     create : function(note, callback) {
         var title = note.title;
         var content = note.content;
-        var createSql = 'insert into note(name, content) values(?, ?)';
-        console.log(title + content);
-        connection.query(createSql, [title,content],function(err, rows, fields){
+        var username = note.username;
+        var createSql = 'insert into note(name, content, user_name) values(?, ?, ?)';
+        console.log(title + content + username);
+        connection.query(createSql, [title,content, username],function(err, rows, fields){
             //the callback function used for handling the err
             console.log(rows);
             callback(err);
@@ -20,24 +21,29 @@ var dao = {
     },
     update : function(note, callback) {
         var nid = note.nid;
-        var title = note.title;
+        var name = note.title;
         var content = note.content;
-        var createSql = 'update note set title = ? and content = ? where nid = ?';
-        console.log(title + content);
-        connection.query(createSql, [title,content,nid],function(err, rows, fields){
+        var sql = 'update note set name = ?, content = ? where nid = ?';
+        console.log("update note=>" + name + content + nid);
+        connection.query(sql,  [name, content, nid],function(err, rows){
             //the callback function used for handling the err
-            console.log(rows);
-            callback(err);
+            if (err != null) {
+                console.log('error! please try again.');
+            } else {
+                callback(rows);
+            }
         });
+        console.log();
     },
     remove : function(nid, callback) {
-        var title = note.title;
-        var content = note.content;
-        var createSql = 'delete from note where nid = ?';
-        console.log(title + content);
-        connection.query(createSql, [nid],function(err, rows, fields){
+        var sql = 'delete from note where nid = ?';
+        connection.query(sql, [nid],function(err, rows){
             //the callback function used for handling the err
-            console.log(rows);
+            if (err != null) {
+                console.log('error! please try again.');
+            } else {
+                console.log('delete success.');
+            }
             callback(err);
         });
     },
@@ -56,6 +62,16 @@ var dao = {
         connection.query(showSql, [note.nid], function(err, rows, fields) {
             if (err != null) {
                 console.log('error! please try again.');
+            } else {
+                callback(rows);
+            }
+        });
+    },
+    selectByUsername : function(username, callback) {
+        var sql = 'select nid, name, content from note where user_name = ?';
+        connection.query(sql, [username], function(err, rows, fields) {
+            if (err != null) {
+                console.log('select by uid error!' + uid);
             } else {
                 callback(rows);
             }

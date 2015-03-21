@@ -5,12 +5,13 @@ var router = express.Router();
 
 /*Note list*/
 router.post('/list', function(req, res) {
-    var name = req.body.user.name;
+    var username = req.body.user.name;
     var passwordToCheck =  req.body.user.password;
     //Check user
-    userDao.getPassword(name, function(password) {
+    userDao.getPassword(username, function(password) {
         if (password == passwordToCheck) {
-            console.log('login successful.');
+            console.log('login=>' + username);
+            req.session.username = username;
             passwordToCheck = null;
         } else {
             passwordToCheck = null;
@@ -19,7 +20,7 @@ router.post('/list', function(req, res) {
         }
     });
     //Show note list
-    dao.show(function(notelist) {
+    dao.selectByUsername(username, function(notelist) {
     //console.log('notelist ' + notelist);
     var noteArr = [];
     for (var i=0; i < notelist.length; i++) {
@@ -33,7 +34,8 @@ router.post('/list', function(req, res) {
             note.content = note.content.substr(0,80) + "...";
         }
     }
-    res.render('list', { notes: noteArr});
+    console.log("post session : " + req.session.username);
+    res.render('list', { user: username, notes: noteArr});
     });
     
 });
@@ -54,6 +56,7 @@ router.get('/list', function(req, res) {
         }
     	noteArr.push(note);
     }
+    console.log("session : " + req.session.username);
     res.render('list', { notes: noteArr});
     });
     //res.redirect('/login');
@@ -63,6 +66,11 @@ router.get('/list', function(req, res) {
 router.get('/login', function(req, res) {
     res.render('login', {
         title: 'welcome to ccnote'});
+});
+
+router.get('/logout', function(req, res) {
+    req.session.username = null;
+    res.redirect("/login");
 });
 
 /* GET home page. */

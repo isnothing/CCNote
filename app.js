@@ -4,7 +4,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session = require('express-session');
 var handler = require('./models/RequestHandler');
 
 var routes = require('./routes/index');
@@ -13,7 +13,7 @@ var users = require('./routes/users');
 var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
-
+var session = require('express-session');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(session({ username: null, saveUninitialized: true, secret: 'keyboard cat', resave: true, cookie: { maxAge: 60000 }}));
 app.use('/', routes);
 app.use('/users', users);
 
@@ -33,6 +33,15 @@ app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
+});
+
+app.use(function (req, res, next) {
+    var url = req.originalUrl;
+    if (url != "/login" && !req.session.username) {
+        return res.redirect("/login");
+    }
+    console.log(url);
+    next();
 });
 
 /// error handlers
@@ -64,7 +73,6 @@ io.on('connection', function(socket) {
     socket.emit('result', {hello: 'world'});
 
     socket.on('add', function(data) {
-        console.log('add note ' + data.title);
         handler.handleAdd(data, function(success) {
            if (success == 0) {
                socket.emit('add-finished', {result: 'success'});
@@ -75,19 +83,19 @@ io.on('connection', function(socket) {
     });
 
     socket.on('update',function(data) {
-        console.log('update note');
         handler.handleUpdate(data, function(success) { 
            if (success == 0) {
-               socket.emit('update-finished', {result: 'success'});
+               socket.emit('update-successful', {});
            } else {
-               socket.emit('update-finished',{result: 'fail'});
+               socket.emit('update-failed',{});
            }
         });
     });
 
     socket.on('delete',function(data) {
-        console.log('delete note');
-        handler.handleDelete(data, function(success) { 
+        console.log(data);
+        var nid = data.nid;
+        handler.handleDelete(nid, function(success) { 
            if (success == 0) {
                socket.emit('delete-successful', {});
            } else {
@@ -98,9 +106,7 @@ io.on('connection', function(socket) {
 
     socket.on('show', function(data) {
         var note = {nid:data.nid, name: '', content: ''};
-        console.log("receive : " + note.nid);
-        handler.handleShow(note, function(note) { 
-          console.log("emit"+note.nid);
+        handler.handleShow(note, function(note) {
             socket.emit('show-successful', {"note": note});
         });
     });

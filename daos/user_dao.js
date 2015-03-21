@@ -25,7 +25,6 @@ var dao = {
             if (err != null) {
                 console.log('error!');
             } else {
-                console.log(rows);
                 if (rows.length != 0) {
                     callback(rows[0].password);
                 } else {

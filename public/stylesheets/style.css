@@ -40,6 +40,7 @@ a:focus {outline: none;}
 }
 
 #content {
+	top: 20px;
     position: relative;
     margin-left: 240px;
 }
@@ -73,7 +74,7 @@ a:focus {outline: none;}
 }
 
 .note-editor {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 20px;
     width: 960px;
     height: 640px;
@@ -101,3 +102,22 @@ a:focus {outline: none;}
     height: 36px;
 }
 
+::-webkit-scrollbar {
+        width: 8px;
+    }
+::-webkit-scrollbar {
+            width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #888;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(100,100,100,0.4); 
+}

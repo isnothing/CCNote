@@ -13,10 +13,12 @@
   <body>
   <div id="head">
     <h1>CCNote</h1>
+    <h5>当前用户: <%= user %></h5>
+    <input type="hidden" id="username" value="<%= user %>"/>
     <ul>
         <li class="head-li"><button id="new-button" class="btn btn-embossed btn-primary">新建</button></li>
         <li class="head-li"><button id="list-button" class="btn btn-embossed btn-primary">列表</button></li>
-        <li class="head-li"><button id="settings-button" class="btn btn-embossed btn-primary">设置</button></li>
+        <li class="head-li"><button id="settings-button" onclick="location.href='/logout'" class="btn btn-embossed btn-primary">注销</button></li>
     </ul>
   </div>
 
