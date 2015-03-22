@@ -11,10 +11,13 @@
    <script src='/socket.io/socket.io.js'></script>
   </head>
   <body>
+  <div id="page-wrap">
   <div id="head">
     <h1>CCNote</h1>
     <h5>当前用户: <%= user %></h5>
+    <form id="refreshForm">
     <input type="hidden" id="username" value="<%= user %>"/>
+    </form>
     <ul>
         <li class="head-li"><button id="new-button" class="btn btn-embossed btn-primary">新建</button></li>
         <li class="head-li"><button id="list-button" class="btn btn-embossed btn-primary">列表</button></li>
@@ -32,6 +35,12 @@
       </div>
       <div id="content"><% include note_content %></div>
   </div>
+  </div>
+<div id="dialog">
+  <h2>I'm a dialog box. You  have to click a button to open me.</h2>
+  <button class="shared-btn">Close Dialog Box</button>
+</div>
   </body>
+
    <script src='javascripts/note.js'></script>
 </html>

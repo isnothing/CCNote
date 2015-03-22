@@ -41,6 +41,8 @@ router.post('/list', function(req, res) {
 });
 
 router.get('/list', function(req, res) {
+    var username = req.body.user.name;
+    var passwordToCheck =  req.body.user.password;
     //Show note list
     dao.show(function(notelist) {
     console.log('note ' + notelist);
@@ -57,7 +59,7 @@ router.get('/list', function(req, res) {
     	noteArr.push(note);
     }
     console.log("session : " + req.session.username);
-    res.render('list', { notes: noteArr});
+    res.render('list', { user: username, notes: noteArr});
     });
     //res.redirect('/login');
 });

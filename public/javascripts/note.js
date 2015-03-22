@@ -96,6 +96,13 @@ $(document).ready(function() {
         } else {
             updateNote(nid, title, content);
         }
+        $.ajax({
+          type: "POST",
+          url: "/list",
+          data: $("#refreshForm").serialize(),
+          success: success,
+          dataType: dataType
+        });
         window.location.reload();
     });
     
@@ -106,3 +113,8 @@ $(document).ready(function() {
         }
     });
 });
+
+$(".shared-btn").on("click", function() {
+    console.log("shared-btn");
+  $("body").toggleClass("dialogIsOpen");
+})
