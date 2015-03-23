@@ -9,10 +9,10 @@ a:focus {outline: none;}
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
-.open .dropdown-toggle.btn-primary {color: #ffffff;background-color: #62FF00;border-color: #48c9b0;}
+.open .dropdown-toggle.btn-primary {color: #ffffff;background-color: #494C4D;border-color: #494C4D;}
 .form-control {border: 2px solid #bdc3c7;color: #34495e;font-family: "Lato", Helvetica, Arial, sans-serif;font-size: 15px;line-height: 1.467;padding: 4px 12px; margin: 10px; height: 20px;-webkit-appearance: none;border-radius: 6px;-webkit-box-shadow: none;box-shadow: none;-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;transition: border .25s linear, color .25s linear, background-color .25s linear;}
 .form-group.focus .form-control,
-.form-control:focus {border-color: #1abc9c;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
+.form-control:focus {border-color: #494C4D;outline: 0;-webkit-box-shadow: none;box-shadow: none;}
 
 #head {
     position: fixed;
@@ -35,7 +35,7 @@ a:focus {outline: none;}
 
 #main {
 	position: relative;
-	left: 400px;
+	margin-left: 400px;
 	top: 20px;
 }
 
@@ -63,12 +63,27 @@ a:focus {outline: none;}
 .note-item {
     margin-left: 20px;
 }
-
+.shared-note-list {
+    position: relative;
+    border: 1px solid #F0F0F0;
+    width: 320px;
+    height: 787px;
+    float: left;
+    overflow: auto;
+    display: none;
+}
+.shared-note-list hr {
+    width: 96%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255,255,0,0,1);
+    border-bottom: 1px solid rgba(0,0,255,0.3);
+}
 .note-content {
 }
 
 #note-title {
-    width: 800px;
+    width: 600px;
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -131,43 +146,15 @@ a:focus {outline: none;}
     background: rgba(100,100,100,0.4); 
 }
 
-
-#page-wrap {
-  @include transition(all 0.4s ease);
-  @include filter(
-    blur(0)
-    grayscale(0)
-  );
-
-  .dialogIsOpen & {
-    @include filter(
-      blur(5px)
-      grayscale(50%)
-    );
-    @include transform(scale(0.9));
-  }
-}
-
-#dialog {
-  @include transition(all 0.4s ease);
+#shared-dialog {
+  display: none;
+  position: relative;
   border-radius: 15px;
-  pointer-events: none;
-  position: fixed;
-  width: 50%;
-  padding: 60px;
+  width: 40%;
+  left: 10%;
+  margin-top: -640px;
+  margin-left: 40%;
+  padding: 10px;
   background: white;
-  box-shadow: 0 0 25px black;
-  top: 50%;
-  left: 50%;
-  margin: -25% 0 0 -25%;
-  opacity: 0;
-  @include transform(scale(1.5));
-  .dialogIsOpen & {
-    pointer-events: auto;
-    opacity: 1;
-    @include transform(scale(1));
-  }
-  h2 {
-    font-size: 24px;
-  }
+  box-shadow: 0 0 5px black;
 }

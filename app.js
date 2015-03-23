@@ -14,6 +14,7 @@ var app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var session = require('express-session');
+var sharedNoteDao = require('./daos/shared_dao.js');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -73,9 +74,9 @@ io.on('connection', function(socket) {
     socket.emit('result', {hello: 'world'});
 
     socket.on('add', function(data) {
-        handler.handleAdd(data, function(success) {
-           if (success == 0) {
-               socket.emit('add-finished', {result: 'success'});
+        handler.handleAdd(data, function(_nid) {
+           if (_nid != -1) {
+               socket.emit('add-finished', {nid: _nid});
            } else {
                socket.emit('add-finished',{});
            }
@@ -105,11 +106,19 @@ io.on('connection', function(socket) {
     });
 
     socket.on('show', function(data) {
-        var note = {nid:data.nid, name: '', content: ''};
+        var note = {id:data.nid, name: '', content: ''};
         handler.handleShow(note, function(note) {
             socket.emit('show-successful', {"note": note});
         });
     });
+
+    socket.on('shareNote', function(data) {
+      var nid = data.nid;
+      var username = data.username;
+      sharedNoteDao.create(nid, username, function() {
+            socket.emit('shareNote-successful', {});
+      });
+    })
 
 });
 

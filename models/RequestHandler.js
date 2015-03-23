@@ -3,11 +3,11 @@ var noteDao = require("../daos/note_dao.js");
 var Handler = {
     handleAdd: function(note, callback) {
         //console.log('handle' + note.title);       
-        noteDao.create(note, function(err) {
-              if (err == null) {
-                  callback(0);
+        noteDao.create(note, function(nid) {
+              if (nid != -1) {
+                  callback(nid);
               } else {
-                  callback(1);
+                  callback(nid);
               }
         });
     },

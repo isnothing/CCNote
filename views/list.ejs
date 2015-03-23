@@ -8,6 +8,8 @@
    <script type='text/javascript' src='javascripts/jequery.min.js'></script>
    <script type="text/javascript" src="javascripts/editor.js"></script>
    <script type="text/javascript" src="javascripts/marked.js"></script>
+   <script type="text/javascript" src="javascripts/bootbox.min.js"></script>
+   <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
    <script src='/socket.io/socket.io.js'></script>
   </head>
   <body>
@@ -21,14 +23,22 @@
     <ul>
         <li class="head-li"><button id="new-button" class="btn btn-embossed btn-primary">新建</button></li>
         <li class="head-li"><button id="list-button" class="btn btn-embossed btn-primary">列表</button></li>
+        <li class="head-li"><button id="shared-list-button" class="btn btn-embossed btn-primary">分享笔记</button></li>
         <li class="head-li"><button id="settings-button" onclick="location.href='/logout'" class="btn btn-embossed btn-primary">注销</button></li>
     </ul>
   </div>
 
   <div id="body">
       <div class='note-list'>
-      <h2 class="note-item">笔记列表</h2>
+      <h2 id="noteList" class="note-item">笔记列表</h2>
      <% notes.forEach(function(note){ %>
+     <% include note_item %>
+     <hr>
+     <% }) %>
+      </div>
+      <div class='shared-note-list'>
+      <h2 id="noteList" class="note-item">分享笔记列表</h2>
+     <% shared_notes.forEach(function(note){ %>
      <% include note_item %>
      <hr>
      <% }) %>
@@ -36,9 +46,13 @@
       <div id="content"><% include note_content %></div>
   </div>
   </div>
-<div id="dialog">
-  <h2>I'm a dialog box. You  have to click a button to open me.</h2>
-  <button class="shared-btn">Close Dialog Box</button>
+<div id="shared-dialog">
+  请输入分享用户名:
+  <input type="text" class="form-control input-sm" id="shared-user"/>
+  <input type="hidden" class="form-control input-sm" id="note-id"/>
+  <!-- <input type="submit" onclick="shareNote('#sharedForm')" class="shared-btn btn btn-embossed btn-primary" value="提交"> -->
+  <button onclick="shareNote()" class="shared-btn btn btn-embossed btn-primary">提交</button>
+  <button class="shared-btn btn btn-embossed btn-primary">关闭</button>
 </div>
   </body>
 

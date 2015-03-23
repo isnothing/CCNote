@@ -16,7 +16,12 @@ var dao = {
         connection.query(createSql, [title,content, username],function(err, rows, fields){
             //the callback function used for handling the err
             console.log(rows);
-            callback(err);
+        });
+        var sql = 'select nid from note where name = ? and user_name = ?';
+        connection.query(sql, [title, username],function(err, rows, fields){
+            //the callback function used for handling the err
+            console.log(rows);
+            callback(rows[0].nid);
         });
     },
     update : function(note, callback) {
@@ -59,7 +64,7 @@ var dao = {
     },
     findByNid : function(note, callback) {
         var showSql = 'select nid, name, content from note where nid = ?';
-        connection.query(showSql, [note.nid], function(err, rows, fields) {
+        connection.query(showSql, [note.id], function(err, rows, fields) {
             if (err != null) {
                 console.log('error! please try again.');
             } else {
