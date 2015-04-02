@@ -1,6 +1,5 @@
-A Collaborative Cloud Note.
-----
-1,User login
-2,Note list
+A simple note application.
 
-status: developing
+License:
+----
+[GPLv3](http://opensource.org/licenses/GPL-3.0)

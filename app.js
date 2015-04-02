@@ -8,7 +8,6 @@ var session = require('express-session');
 var handler = require('./models/RequestHandler');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 
 var app = express();
 var server = require('http').createServer(app);
@@ -27,7 +26,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ username: null, saveUninitialized: true, secret: 'keyboard cat', resave: true, cookie: { maxAge: 60000 }}));
 app.use('/', routes);
-app.use('/users', users);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
